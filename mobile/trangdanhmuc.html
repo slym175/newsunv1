@@ -1,0 +1,1354 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+            "logo.jpg"
+        ]
+    }
+    </script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        amp-img {
+            max-width: 100%;
+        }
+
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none
+        }
+        </style>
+    </noscript>
+    <script src="https://kit.fontawesome.com/30dda5888f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/mobile/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/30dda5888f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel/dist/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <!-- start header -->
+    <header class="">
+        <amp-img src="../assets/mobile/Image 12.png" alt="Banner" height="52" width="375" layout="responsive"></amp-img>
+        <nav class="navbar navbar-expand-xl navbar-light app-nav-bar p-0">
+            <div class="mx-3 d-flex justify-content-between align-items-center w-100">
+                <a class="navbar-brand" href="trangchu.html">
+                    <amp-img src="../assets/mobile/logo1.png" alt="Logo" height="21" width="86"></amp-img>
+                </a>
+                <div class="search-input">
+                    <form action="#" method="POST">
+                        <input type="text" name="search" placeholder="Tìm kiếm tại điện máy">
+                        <a href="#" type="button"><i class="fas fa-search"></i></i></a>
+                    </form>
+                </div>
+                <div class="m-menu">
+                    <a href="#" title="Sản phẩm đã xem" class="p-seen">
+                        <span>Sản phẩm <br> đã xem</span>
+                        <amp-img class="arrow-down" src="../assets/mobile/3006/Polygon12.png" alt="Cart Icon" height="5" width="6"></amp-img>
+                    </a>
+                    <a href="giohang.html" title="Giỏ hàng" class="shopping-cart">
+                        <span>1</span>
+                        <amp-img src="../assets/mobile/shopping-cart (1).svg" alt="Cart Icon" height="18" width="19"></amp-img>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <amp-img src="../assets/mobile/3006/Group2795.png" alt="Cart Icon" height="22" width="23"></amp-img>
+                    </button>
+                </div>
+            </div>
+            <div class="px-3 branch-location">
+                <a href="#">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Xem danh sách các chi nhánh (8:00 - 18:00)</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto pb-3">
+                    <li class="nav-item my-2">
+                        <a class="nav-link text-right btn-c-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span>X đóng</span></a>
+                    </li>
+                    <li class="nav-item app-menu">
+                        <button class="nav-link">
+                            <span>Thiết bị nhà bếp</span>
+                            <div class="submenu p-3">
+                                <h6 class="font-14 mb-3">Thiết bị nhà bếp</h6>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                                    <span class="text-2 font-weight-bold">Nồi nấu công nghiệp</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample1">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                    <span class="text-2 font-weight-bold">Lò nướng</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample2">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                                    <span class="text-2 font-weight-bold">Bếp công nghiệp</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample3">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                                    <span class="text-2 font-weight-bold">Tủ hấp công nghiệp</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample4">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                                    <span class="text-2 font-weight-bold">Máy móc phụ trợ</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample5">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                                    <span class="text-2 font-weight-bold">Máy thái rau củ quả</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample6">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                                    <span class="text-2 font-weight-bold">Thiết bị nhà bếp khác</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample7">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="nav-link">
+                            <span>Máy chế biến thịt</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Thiết bị làm bánh</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Máy chế biến nông sản</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Thiết bị làm đồ ăn nhanh</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Máy chế biến thực phẩm</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Dây chuyền thiết bị</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Linh kiện - Phụ kiện</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+    <!-- start main -->
+    <main>
+        <section class="container border-bottom">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb" class="m-breadcrumb">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="#">Tin tức</a></li>
+                            <li class="breadcrumb-item"><a href="#">Máy thái thịt</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Máy thái thịt đông lạnh</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="container py-3 mb-3 border-bottom">
+            <div class="row">
+                <div class="col-12 font-14 show-hide-text">
+                    <p class="text-justify text-2">Sẽ không còn nỗi lo sức khỏe với những chiếc lò đun than tổ ong đầy khói bụi độc hại. Chấm dứt chuỗi ngày lo sợ cháy nổ khi sử dụng bếp gas công nghiệp lỏng lẻo kém an toàn. Việc nấu phở giờ đây đã trở nên sạch sẽ, nhanh chóng, an toàn hơn bao giờ hết với Nồi Nấu Phở NEWSUN. Nồi nấu phở NEWSUN với chất liệu inox cao cấp, đun nấu hoàn toàn tự động, không khói than độc hại, sạch sẽ và an toàn, là sự...</p>
+                    <div class="d-flex justify-content-center show-more">
+                        <a href="#" class="font-12">Xem thêm<i class="fas fa-chevron-down font-12 ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container catalog-section pb-3">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <a class="btn btn-catalog" data-toggle="collapse" href="#collapseCatalog1" role="button" aria-expanded="false" aria-controls="collapseContent">
+                        <span>Nồi nấu phở điện rời</span> <span>Xem tất cả >></span>
+                    </a>
+                    <div class="collapse f-catalog" id="collapseCatalog1">
+                        <a href="trangdanhmuc.html" class="btn c-catalog">
+                            Tủ nấu cơm Việt Nam
+                        </a>
+                        <a href="trangdanhmuc.html" class="btn c-catalog">
+                            Tủ nấu cơm Nhập khẩu
+                        </a>
+                        <a href="trangdanhmuc.html" class="btn c-catalog">
+                            Tủ hấp thực phẩm
+                        </a>
+                        <a href="trangdanhmuc.html" class="btn c-catalog">
+                            Tủ hấp thực phẩm
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-3">
+                <div class="card p-2 col-6 col-md-3 col-lg-2 product">
+                    <a href="trangsanpham.html">
+                        <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                    </a>
+                    <span class="discount-status">
+                        <amp-img class="img-fluid" src="../assets/2606/Group 2108.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                    </span>
+                    <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                    <div class="card-body p-0 mt-lg-2 mt-1">
+                        <span class="product-price">1.300.000đ</span>
+                        <div class="d-flex align-items-center">
+                            <span class="product-d-price">1.300.000đ</span>
+                            <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                            <span class="product-cmt">150 đánh giá</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-2 col-6 col-md-3 col-lg-2 product">
+                    <a href="trangsanpham.html">
+                        <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                    </a>
+                    <span class="discount-status">
+                        <amp-img class="img-fluid" src="../assets/2606/Group 2106.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                    </span>
+                    <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                    <div class="card-body p-0 mt-lg-2 mt-1">
+                        <span class="product-price">1.300.000đ</span>
+                        <div class="d-flex align-items-center">
+                            <span class="product-d-price">1.300.000đ</span>
+                            <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                            <span class="product-cmt">150 đánh giá</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-2 col-6 col-md-3 col-lg-2 product">
+                    <a href="trangsanpham.html">
+                        <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                    </a>
+                    <span class="discount-status">
+                        <amp-img class="img-fluid" src="../assets/2606/Group 2108.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                    </span>
+                    <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                    <div class="card-body p-0 mt-lg-2 mt-1">
+                        <span class="product-price">1.300.000đ</span>
+                        <div class="d-flex align-items-center">
+                            <span class="product-d-price">1.300.000đ</span>
+                            <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                            <span class="product-cmt">150 đánh giá</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-2 col-6 col-md-3 col-lg-2 product">
+                    <a href="trangsanpham.html">
+                        <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                    </a>
+                    <span class="discount-status">
+                        <amp-img class="img-fluid" src="../assets/2606/Group 2106.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                    </span>
+                    <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                    <div class="card-body p-0 mt-lg-2 mt-1">
+                        <span class="product-price">1.300.000đ</span>
+                        <div class="d-flex align-items-center">
+                            <span class="product-d-price">1.300.000đ</span>
+                            <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                            <span class="product-cmt">150 đánh giá</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-3">
+                <a href="#" title="Xem thêm" class="btn btn-outline-primary">Xem thêm <i class="fas fa-angle-down ml-3"></i></a>
+            </div>
+        </section>
+        <section class="container catalog-section pb-3">
+            <div class="row mb-3">
+                <div class="col-12">
+                    <a class="btn btn-catalog" data-toggle="collapse" href="#collapseCatalog1" role="button" aria-expanded="false" aria-controls="collapseContent">
+                        <span>Nồi nấu phở điện rời</span> <span>Xem tất cả >></span>
+                    </a>
+                    <div class="collapse f-catalog" id="collapseCatalog1">
+                        <a href="trangdanhmuc.html" class="btn c-catalog">
+                            Tủ nấu cơm Việt Nam
+                        </a>
+                        <a href="trangdanhmuc.html" class="btn c-catalog">
+                            Tủ nấu cơm Nhập khẩu
+                        </a>
+                        <a href="trangdanhmuc.html" class="btn c-catalog">
+                            Tủ hấp thực phẩm
+                        </a>
+                        <a href="trangdanhmuc.html" class="btn c-catalog">
+                            Tủ hấp thực phẩm
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row px-3">
+                <div class="card p-2 col-6 col-md-3 col-lg-2 product">
+                    <a href="trangsanpham.html">
+                        <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                    </a>
+                    <span class="discount-status">
+                        <amp-img class="img-fluid" src="../assets/2606/Group 2108.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                    </span>
+                    <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                    <div class="card-body p-0 mt-lg-2 mt-1">
+                        <span class="product-price">1.300.000đ</span>
+                        <div class="d-flex align-items-center">
+                            <span class="product-d-price">1.300.000đ</span>
+                            <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                            <span class="product-cmt">150 đánh giá</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-2 col-6 col-md-3 col-lg-2 product">
+                    <a href="trangsanpham.html">
+                        <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                    </a>
+                    <span class="discount-status">
+                        <amp-img class="img-fluid" src="../assets/2606/Group 2106.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                    </span>
+                    <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                    <div class="card-body p-0 mt-lg-2 mt-1">
+                        <span class="product-price">1.300.000đ</span>
+                        <div class="d-flex align-items-center">
+                            <span class="product-d-price">1.300.000đ</span>
+                            <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                            <span class="product-cmt">150 đánh giá</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-2 col-6 col-md-3 col-lg-2 product">
+                    <a href="trangsanpham.html">
+                        <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                    </a>
+                    <span class="discount-status">
+                        <amp-img class="img-fluid" src="../assets/2606/Group 2108.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                    </span>
+                    <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                    <div class="card-body p-0 mt-lg-2 mt-1">
+                        <span class="product-price">1.300.000đ</span>
+                        <div class="d-flex align-items-center">
+                            <span class="product-d-price">1.300.000đ</span>
+                            <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                            <span class="product-cmt">150 đánh giá</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-2 col-6 col-md-3 col-lg-2 product">
+                    <a href="trangsanpham.html">
+                        <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                    </a>
+                    <span class="discount-status">
+                        <amp-img class="img-fluid" src="../assets/2606/Group 2106.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                    </span>
+                    <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                    <div class="card-body p-0 mt-lg-2 mt-1">
+                        <span class="product-price">1.300.000đ</span>
+                        <div class="d-flex align-items-center">
+                            <span class="product-d-price">1.300.000đ</span>
+                            <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                        </div>
+                        <div class="d-flex">
+                            <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                            <span class="product-cmt">150 đánh giá</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mt-3">
+                <a href="#" title="Xem thêm" class="btn btn-outline-primary">Xem thêm <i class="fas fa-angle-down ml-3"></i></a>
+            </div>
+        </section>
+        <section class="container border-top border-bottom py-3 p-ads">
+            <div class="row">
+                <div class="col-12 font-14">
+                    <div class="p-ads-compact">
+                        <h6 class="font-14 font-weight-bold">Nồi nấu phở</h6>
+                        <p class="text-justify">Sẽ không còn nỗi lo sức khỏe với những chiếc lò đun than tổ ong đầy khói bụi độc hại. Chấm dứt chuỗi ngày lo sợ cháy nổ khi sử dụng bếp gas công nghiệp lỏng lẻo kém an toàn. Việc nấu phở giờ đây đã trở nên sạch sẽ, nhanh chóng, an toàn hơn bao giờ hết với <strong>Nồi nấu phở <span class="text-danger">NEWSUN</span></strong></p>
+                        <p class="text-justify"><strong>Nồi nấu phở <span class="text-danger">NEWSUN</span></strong> với chất liệu inox cao cấp, đun nấu hoàn toàn tự động, không khói than độc hại, sạch sẽ và an toàn, là sự lựa chọn hàng đầu cho những bát bún phở thơm ngon giữ chân thực khách.</p>
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="#" title="Xem thêm" class="show-ads btn btn-outline-primary">Xem thêm <i class="fas fa-angle-down ml-3"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-ads-full">
+                        <h6 class="font-14 font-weight-bold">Nồi nấu phở</h6>
+                        <p class="text-justify">Sẽ không còn nỗi lo sức khỏe với những chiếc lò đun than tổ ong đầy khói bụi độc hại. Chấm dứt chuỗi ngày lo sợ cháy nổ khi sử dụng bếp gas công nghiệp lỏng lẻo kém an toàn. Việc nấu phở giờ đây đã trở nên sạch sẽ, nhanh chóng, an toàn hơn bao giờ hết với <strong>Nồi nấu phở <span class="text-danger">NEWSUN</span></strong></p>
+                        <p class="text-justify"><strong>Nồi nấu phở <span class="text-danger">NEWSUN</span></strong> với chất liệu inox cao cấp, đun nấu hoàn toàn tự động, không khói than độc hại, sạch sẽ và an toàn, là sự lựa chọn hàng đầu cho những bát bún phở thơm ngon giữ chân thực khách.</p>
+                        <amp-img class="img-fluid my-2" src="../assets/mobile/Image7.png" height="163" width="375" alt="Logo" layout="responsive"></amp-img>
+                        <p class="px-3 font-italic text-justify">Nồi thiết kế đa dạng dung tích, nồi đơn, bộ đôi, bộ ba…đáp ứng tốt nhất nhu cầu sử dụng tại quán ăn bún phở lớn nhỏ, các nhà hàng, trường học hay bếp ăn công nghiệp. Và đừng bỏ lỡ khuyến mãi với nhiều ưu đãi hấp dẫn – Cơ hội nhận nhiều quà tặng khi mua hàng tại <span class="font-weight-bold text-danger">NEWSUN</span>.</p>
+                        <h6 class="font-14 font-weight-bold">Những lí do bạn nên đầu tư ngay 1 bộ nồi nấu phở bằng điện.</h6>
+                        <p class="text-justify">Không phải ngẫu nhiên mà nồi nấu phở điện được sử dụng phổ biến hiện nay. Khi yêu cầu của thực khách vào quán thưởng thức món ăn ngày càng cao, điều họ quan tâm chính là chất lượng món ăn và độ an toàn sạch sẽ thì nồi nấu phở điện hoàn toàn đáp ứng.</p>
+                        <amp-img class="img-fluid my-2" src="../assets/mobile/Image8.png" height="489" width="333" alt="Logo" layout="responsive"></amp-img>
+                        <p class="text-center font-10">(Nồi sử dụng nhiên liệu điện, chất liệu inox sạch sẽ không độc hại)</p>
+                        <h6 class="font-14 font-weight-bold">Nấu phở nhanh chóng, tiện lợi giúp tiết kiệm thời gian.</h6>
+                        <p class="text-justify">Phở là một trong những món ăn đặc trưng ở Việt Nam và cách chế biến mất khá nhiều thời gian. Từ việc ninh xương hàng tiếng đồng hồ cho đến việc chắc lọc nước dùng rồi nêm nếm gia vị. Chưa kể đến việc nấu nước để nhúng bánh cũng đã tiêu tốn của bạn ít nhất 4 - 5 tiếng.</p>
+                        <amp-img class="img-fluid my-2" src="../assets/mobile/Image9.png" height="198" width="340" alt="Logo" layout="responsive"></amp-img>
+                        <p class="text-justify">Với nồi nấu phở bằng điện của <span class="font-weight-bold text-danger">NEWSUN</span> sẽ giúp bạn:</p>
+                        <ul class="pl-3">
+                            <li>Rút ngắn thời gian ninh hầm xương hơn nồi than, gas nhờ vào thân nồi thiết kế 2 lớp cách nhiệt bảo ôn.</li>
+                            <li>Không tốn thời gian mồi bếp than, thay than và trông canh lửa to nhỏ trong quá trình ninh xương.</li>
+                            <li>Quá trình đun nấu có thể tuỳ chỉnh nhiệt độ to nhỏ chính xác giúp ninh nhừ xương và thốc hết chất ra nước, đảm bảo một nồi nước xương ngon ngọt đậm đà.</li>
+                        </ul>
+                        <amp-img class="img-fluid my-2" src="../assets/mobile/Image10.png" height="235" width="336" alt="Logo" layout="responsive"></amp-img>
+                        <p class="text-center font-10">(Nồi nấu phở nhanh chóng tiết kiệm thời gian)</p>
+                        <h6 class="font-14 font-weight-bold">Sử dụng đa năng, an toàn.</h6>
+                        <p class="text-justify">Ngoài chức năng chuyên dụng dùng để nấu phở thì nồi phở điện còn được sử dụng đa năng trong việc bếp núc như: nồi để ninh hầm xương, đun nước sôi, nấu canh, luộc giò, luộc bánh chưng…Chính vì vậy, nồi nấu phở điện được xem là trợ thủ đắc lực cho mọi quán ăn nhà hàng.</p>
+                        <amp-img class="img-fluid my-2" src="../assets/mobile/Image11.png" height="489" width="333" alt="Logo" layout="responsive"></amp-img>
+                        <p class="text-justify">An toàn trong sử dụng là yếu tố người tiêu dùng quan tầm hàng đầu. Với nồi nấu phở thương hiệu <span class="font-weight-bold text-danger">NEWSUN</span> được đội ngũ kỹ thuật (bằng cấp từ các trường đại học) thiết kế sơ đồ đấu điện với 3 tiêu chí hàng đầu:</p>
+                        <ul class="pl-3">
+                            <li>An toàn tuyệt đối (với Aptomat chống giật)</li>
+                            <li>Chế độ điều khiển thông minh (tiết kiệm điện)</li>
+                            <li>Tuổi thọ bền, dễ sử dụng cho mọi người</li>
+                        </ul>
+                        <p class="text-justify">Đối với những hộ đang có ý định mở quán kinh doanh bún phở, phục vụ thực khách càng cần tìm hiểu và sử dụng nồi nấu phở bằng điện ngay từ khâu đầu tư trang thiết bị cho quán.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container pt-3 border-bottom">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <h6 class="font-weight-bold font-14">Sản phẩm mua kèm:</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 owl-carousel owl-theme dp-owl-carousel-2">
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2108.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2106.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2108.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2106.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2108.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2106.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2108.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2106.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 dot-container" id="carousel-dots-2"></div>
+            </div>
+        </section>
+        <section class="container pt-3 border-bottom">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <h6 class="font-weight-bold font-14">Sản phẩm đã xem:</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 owl-carousel owl-theme dp-owl-carousel-3">
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2108.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2106.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2108.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2106.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2108.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2106.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2108.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card p-2 product item">
+                        <a href="trangsanpham.html">
+                            <amp-img src="../assets/trangchu/7-2.png" height="165" width="169" layout="responsive" alt="Card image cap"></amp-img>
+                        </a>
+                        <span class="discount-status">
+                            <amp-img class="img-fluid" src="../assets/2606/Group 2106.png" height="25" width="148" layout="responsive" alt="Red Status"></amp-img>
+                        </span>
+                        <a href="trangsanpham.html" class="product-name"><span>Máy xay giò chả mini 3 kg/mẻ</span></a>
+                        <div class="card-body p-0 mt-lg-2 mt-1">
+                            <span class="product-price">1.300.000đ</span>
+                            <div class="d-flex align-items-center">
+                                <span class="product-d-price">1.300.000đ</span>
+                                <span class="product-d-discount ml-lg-3 ml-1">(-20%)</span>
+                            </div>
+                            <div class="d-flex">
+                                <span class="product-star">4.5/5 <amp-img src="../assets/star.svg" alt="star" height="11" width="11"></amp-img></span>
+                                <span class="product-cmt">150 đánh giá</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 dot-container" id="carousel-dots-3"></div>
+            </div>
+        </section>
+        <section class="container py-3 border-bottom">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="font-14">Từ khóa tìm kiếm nhiều:</h4>
+                </div>
+            </div>
+            <div class="row hashtags">
+                <div class="col-12">
+                    <a href="#" class="hashtag">
+                        <p># Máy xay giò chả</p>
+                    </a>
+                    <a href="#" class="hashtag">
+                        <p># Máy làm chà bông</p>
+                    </a>
+                    <a href="#" class="hashtag">
+                        <p># Máy tạo viên thịt cá</p>
+                    </a>
+                    <a href="#" class="hashtag">
+                        <p># Máy xay tạo viên thịt cá</p>
+                    </a>
+                    <a href="#" class="hashtag">
+                        <p># Tủ hấp giò chả</p>
+                    </a>
+                    <a href="#" class="hashtag">
+                        <p># Máy xay giò chả</p>
+                    </a>
+                    <a href="#" class="hashtag">
+                        <p># Máy xay giò chả</p>
+                    </a>
+                    <a href="#" class="hashtag">
+                        <p># Máy xay tạo viên thịt cá</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="container py-3 border-bottom">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <h6 class="font-weight-bold font-14">Đánh giá sản phẩm:</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-5 d-flex d-md-block justify-content-start mb-2">
+                    <h2 class="text-center text-warning font-14 font-weight-bold f-28 mt-md-3">4.5/5</h2>
+                    <span class="d-flex justify-content-center align-items-center mx-3">
+                        <amp-img src="../assets/star.svg" alt="Star Icon" height="15" width="16" class="mr-2"></amp-img>
+                        <amp-img src="../assets/star.svg" alt="Star Icon" height="15" width="16" class="mr-2"></amp-img>
+                        <amp-img src="../assets/star.svg" alt="Star Icon" height="15" width="16" class="mr-2"></amp-img>
+                        <amp-img src="../assets/star.svg" alt="Star Icon" height="15" width="16" class="mr-2"></amp-img>
+                        <amp-img src="../assets/star1.svg" alt="Star Icon" height="15" width="16" class="mr-2"></amp-img>
+                    </span>
+                    <p class="text-center font-14 mt-md-2">(100 đáng giá)</p>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="rating my-1">
+                        <span>5<amp-img src="../assets/star2.svg" alt="Star Icon" height="13" width="13" class="ml-1"></amp-img></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="rating-percent">50<span class="font-7">%</span></span>
+                        <span class="pl-2 vote-number border-left ">100 đánh giá</span>
+                    </div>
+                    <div class="rating my-1">
+                        <span>4<amp-img src="../assets/star2.svg" alt="Star Icon" height="13" width="13" class="ml-1"></amp-img></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="rating-percent">50<span class="font-7">%</span></span>
+                        <span class="pl-2 vote-number border-left ">100 đánh giá</span>
+                    </div>
+                    <div class="rating my-1">
+                        <span>3<amp-img src="../assets/star2.svg" alt="Star Icon" height="13" width="13" class="ml-1"></amp-img></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="rating-percent">50<span class="font-7">%</span></span>
+                        <span class="pl-2 vote-number border-left ">100 đánh giá</span>
+                    </div>
+                    <div class="rating my-1">
+                        <span>2<amp-img src="../assets/star2.svg" alt="Star Icon" height="13" width="13" class="ml-1"></amp-img></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="rating-percent">1<span class="font-7">%</span></span>
+                        <span class="pl-2 vote-number border-left ">100 đánh giá</span>
+                    </div>
+                    <div class="rating my-1">
+                        <span>1<amp-img src="../assets/star2.svg" alt="Star Icon" height="13" width="13" class="ml-1"></amp-img></span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <span class="rating-percent">0<span class="font-7">%</span></span>
+                        <span class="pl-2 vote-number border-left ">1000 đánh giá</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-3 border-bottom">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <h6 class="font-weight-bold font-14">Bình luận:</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" method="POST" accept-charset="utf-8">
+                        <div class="ip-discuss">
+                            <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Mời bạn thảo luận. Vui lòng nhập tiếng việt có dấu..."></textarea>
+                            <a href="#" class="btn btn-send font-14">Gửi</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div class="media mt-3">
+                    <amp-img src="../assets/20.png" height="50" width="50" class="mr-3 rounded-pill img-fluid" alt="Avatar"></amp-img>
+                    <div class="media-body font-14">
+                        <div class="mt-0 d-flex align-items-center">
+                            <span class="font-weight-bold mr-4">Nguyễn Thu Hương</span>
+                            <span class="d-flex justify-content-center">
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star1.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                            </span>
+                        </div>
+                        <p class="font-14 my-2">Mới mua được mấy ngày thấy chất lượng rất tôt ,hiện tại cảm thấy rất hài lòng. Ủng hộ Newsun.</p>
+                        <div>
+                            <span class="pr-2">
+                                <a href="#" class="text-dark">10 <i class="fas fa-thumbs-up ml-2 text-primary"></i></a>
+                            </span>
+                            <span class="pl-2">
+                                <a href="#" class="text-dark">
+                                    1 trả lời <i class="fas fa-comments ml-2 text-primary"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="media mt-3">
+                    <amp-img src="../assets/20.png" height="50" width="50" class="mr-3 rounded-pill img-fluid" alt="Avatar"></amp-img>
+                    <div class="media-body font-14">
+                        <div class="mt-0 d-flex align-items-center">
+                            <span class="font-weight-bold mr-4">Nguyễn Thu Hương</span>
+                            <span class="d-flex justify-content-center">
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star1.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                            </span>
+                        </div>
+                        <p class="font-14 my-2">Mới mua được mấy ngày thấy chất lượng rất tôt ,hiện tại cảm thấy rất hài lòng. Ủng hộ Newsun.</p>
+                        <div>
+                            <span class="pr-2">
+                                <a href="#" class="text-dark">10 <i class="fas fa-thumbs-up ml-2 text-primary"></i></a>
+                            </span>
+                            <span class="pl-2">
+                                <a href="#" class="text-dark">
+                                    1 trả lời <i class="fas fa-comments ml-2 text-primary"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="media mt-3">
+                    <amp-img src="../assets/20.png" height="50" width="50" class="mr-3 rounded-pill img-fluid" alt="Avatar"></amp-img>
+                    <div class="media-body font-14">
+                        <div class="mt-0 d-flex align-items-center">
+                            <span class="font-weight-bold mr-4">Nguyễn Thu Hương</span>
+                            <span class="d-flex justify-content-center">
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star1.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                            </span>
+                        </div>
+                        <p class="font-14 my-2">Mới mua được mấy ngày thấy chất lượng rất tôt ,hiện tại cảm thấy rất hài lòng. Ủng hộ Newsun.</p>
+                        <div>
+                            <span class="pr-2">
+                                <a href="#" class="text-dark">10 <i class="fas fa-thumbs-up ml-2 text-primary"></i></a>
+                            </span>
+                            <span class="pl-2">
+                                <a href="#" class="text-dark">
+                                    1 trả lời <i class="fas fa-comments ml-2 text-primary"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="media mt-3">
+                    <amp-img src="../assets/20.png" height="50" width="50" class="mr-3 rounded-pill img-fluid" alt="Avatar"></amp-img>
+                    <div class="media-body font-14">
+                        <div class="mt-0 d-flex align-items-center">
+                            <span class="font-weight-bold mr-4">Nguyễn Thu Hương</span>
+                            <span class="d-flex justify-content-center">
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star1.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                            </span>
+                        </div>
+                        <p class="font-14 my-2">Mới mua được mấy ngày thấy chất lượng rất tôt ,hiện tại cảm thấy rất hài lòng. Ủng hộ Newsun.</p>
+                        <div>
+                            <span class="pr-2">
+                                <a href="#" class="text-dark">10 <i class="fas fa-thumbs-up ml-2 text-primary"></i></a>
+                            </span>
+                            <span class="pl-2">
+                                <a href="#" class="text-dark">
+                                    1 trả lời <i class="fas fa-comments ml-2 text-primary"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="media mt-3">
+                    <amp-img src="../assets/20.png" height="50" width="50" class="mr-3 rounded-pill img-fluid" alt="Avatar"></amp-img>
+                    <div class="media-body font-14">
+                        <div class="mt-0 d-flex align-items-center">
+                            <span class="font-weight-bold mr-4">Nguyễn Thu Hương</span>
+                            <span class="d-flex justify-content-center">
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star1.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                            </span>
+                        </div>
+                        <p class="font-14 my-2">Mới mua được mấy ngày thấy chất lượng rất tôt ,hiện tại cảm thấy rất hài lòng. Ủng hộ Newsun.</p>
+                        <div>
+                            <span class="pr-2">
+                                <a href="#" class="text-dark">10 <i class="fas fa-thumbs-up ml-2 text-primary"></i></a>
+                            </span>
+                            <span class="pl-2">
+                                <a href="#" class="text-dark">
+                                    1 trả lời <i class="fas fa-comments ml-2 text-primary"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="media mt-3">
+                    <amp-img src="../assets/20.png" height="50" width="50" class="mr-3 rounded-pill img-fluid" alt="Avatar"></amp-img>
+                    <div class="media-body font-14">
+                        <div class="mt-0 d-flex align-items-center">
+                            <span class="font-weight-bold mr-4">Nguyễn Thu Hương</span>
+                            <span class="d-flex justify-content-center">
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                                <amp-img src="../assets/star1.svg" alt="Star Icon" height="10" width="10" class="mr-2"></amp-img>
+                            </span>
+                        </div>
+                        <p class="font-14 my-2">Mới mua được mấy ngày thấy chất lượng rất tôt ,hiện tại cảm thấy rất hài lòng. Ủng hộ Newsun.</p>
+                        <div>
+                            <span class="pr-2">
+                                <a href="#" class="text-dark">10 <i class="fas fa-thumbs-up ml-2 text-primary"></i></a>
+                            </span>
+                            <span class="pl-2">
+                                <a href="#" class="text-dark">
+                                    1 trả lời <i class="fas fa-comments ml-2 text-primary"></i>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 d-flex justify-content-center">
+                        <a href="#" class="btn btn-outline-primary font-14 px-5 py-1 w-100">Xem thêm bình luận <i class="font-12 ml-3 fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container pt-3">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <h6 class="font-weight-bold font-14">Tin tức:</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="row mb-md-3 mb-2">
+                        <div class="col-5 col-md-12">
+                            <amp-img class="img-fluid" src="../assets/trangtintuc/64986.png" height="59" width="120" layout="responsive" alt="Logo"></amp-img>
+                        </div>
+                        <div class="col-7 col-md-12 flex flex-column justify-content-between pl-0 pl-md-3 mt-md-2">
+                            <a href="chitiettintuc.html" title="">
+                                <h6 class="font-14 text-dark mb-1">Hướng dẫn sử dụng máy xay giò chả</h6>
+                            </a>
+                            <div>
+                                <a href="#" title="Tags"><span class="m-0 bg-2 font-10 p-1 text-dark"># Tư vấn mua máy xay giò chả</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="row mb-md-3 mb-2">
+                        <div class="col-5 col-md-12">
+                            <amp-img class="img-fluid" src="../assets/trangtintuc/64986.png" height="59" width="120" layout="responsive" alt="Logo"></amp-img>
+                        </div>
+                        <div class="col-7 col-md-12 flex flex-column justify-content-between pl-0 pl-md-3 mt-md-2">
+                            <a href="chitiettintuc.html" title="">
+                                <h6 class="font-14 text-dark mb-1">Hướng dẫn sử dụng máy xay giò chả</h6>
+                            </a>
+                            <div>
+                                <a href="#" title="Tags"><span class="m-0 bg-2 font-10 p-1 text-dark"># Tư vấn mua máy xay giò chả</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="row mb-md-3 mb-2">
+                        <div class="col-5 col-md-12">
+                            <amp-img class="img-fluid" src="../assets/trangtintuc/64986.png" height="59" width="120" layout="responsive" alt="Logo"></amp-img>
+                        </div>
+                        <div class="col-7 col-md-12 flex flex-column justify-content-between pl-0 pl-md-3 mt-md-2">
+                            <a href="chitiettintuc.html" title="">
+                                <h6 class="font-14 text-dark mb-1">Hướng dẫn sử dụng máy xay giò chả</h6>
+                            </a>
+                            <div>
+                                <a href="#" title="Tags"><span class="m-0 bg-2 font-10 p-1 text-dark"># Tư vấn mua máy xay giò chả</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="row mb-md-3 mb-2">
+                        <div class="col-5 col-md-12">
+                            <amp-img class="img-fluid" src="../assets/trangtintuc/64986.png" height="59" width="120" layout="responsive" alt="Logo"></amp-img>
+                        </div>
+                        <div class="col-7 col-md-12 flex flex-column justify-content-between pl-0 pl-md-3 mt-md-2">
+                            <a href="chitiettintuc.html" title="">
+                                <h6 class="font-14 text-dark mb-1">Hướng dẫn sử dụng máy xay giò chả</h6>
+                            </a>
+                            <div>
+                                <a href="#" title="Tags"><span class="m-0 bg-2 font-10 p-1 text-dark"># Tư vấn mua máy xay giò chả</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex btn btn-outline-primary justify-content-center align-items-center">
+                        <a href="trangtintuc.html" class="font-14 w-100 align-items-center">
+                            Xem tất cả bài viết liên quan
+                        </a>
+                        <i class="font-12 ml-3 fas fa-chevron-right float-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- end main -->
+    <!-- start footer -->
+    <footer class="mt-3 pt-3 border-top footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <h2 class="my-2 mt-0 font-14">TỔNG ĐÀI HỖ TRỢ (GỌI MIỄN PHÍ)</h2>
+                    <table class="mb-2 font-14 w-100">
+                        <tbody>
+                            <tr class="text-2">
+                                <td class="py-1">Mua hàng: <strong class="font-weight-bold">0934.6688.11</strong></td>
+                                <td class="py-1 pl-3">(8:00 - 22:00)</td>
+                            </tr>
+                            <tr class="text-2">
+                                <td class="py-1">Kỹ thuật: <strong class="font-weight-bold">096.139.1551</strong></td>
+                                <td class="py-1 pl-3">(8:00 - 22:00)</td>
+                            </tr>
+                            <tr class="text-2">
+                                <td class="py-1">Bảo hành: <strong class="font-weight-bold">03.8871.8871</strong></td>
+                                <td class="py-1 pl-3">(8:00 - 22:00)</td>
+                            </tr>
+                            <tr class="text-2">
+                                <td class="py-1">Khiếu nại: <strong class="font-weight-bold">03.8871.8871</strong></td>
+                                <td class="py-1 pl-3">(8:00 - 22:00)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-3 col-12 o-place pl-md-0">
+                    <h4 class="my-2">Xem 4 siêu thị (8:00 - 22:00 )</h4>
+                    <div class="o-place-info">
+                        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Các thông tin khác <i class="fas fa-angle-down ml-3"></i></a>
+                        <div class="collapse" id="collapseExample">
+                            <h6>Số 28 Ngõ 168 Nguyễn Xiển - Thanh Xuân - Hà Nội</h6>
+                            <h6>Số 75 Nguyễn Năng Tĩnh, Tp. Vinh, Nghệ An</h6>
+                            <h6>Số 100 Tôn Đức Thắng - Q. Liên Chiểu - Đà Nẵng (Cách bến xe Đà Nẵng 500m).</h6>
+                            <h6>27 Thoại Ngọc Hầu, Vĩnh Hòa, Tp. Nha Trang, Khánh Hòa</h6>
+                            <h6>Số 84 Nguyễn Xí - P.26 - Q. Bình Thạnh - Hồ Chí Minh (Cạnh bến xe Miền Đông)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-md-4 pl-md-0">
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <a href="#" class="font-13"><i class="fab fa-facebook-f mr-2"></i>12,345K lượt thích</a>
+                        <a href="#" class="font-13"><i class="fab fa-youtube mr-2"></i>12,345K đăng ký</a>
+                    </div>
+                    <p class="mt-4">Website cùng tập đoàn:</p>
+                    <a href="trangchu.html" title="Logo">
+                        <amp-img class="img-fluid" src="../assets/logo.png" height="40" width="162" alt="Logo"></amp-img>
+                    </a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="trangchu.html" title="Logo">
+                            <amp-img class="img-fluid" src="../assets/14971568174511_da-thong-bao-bo-cong-thuong.png" height="65" width="108" alt="Logo"></amp-img>
+                        </a>
+                        <a href="trangchu.html" title="Logo">
+                            <amp-img class="img-fluid" src="../assets/dmca_protected_sml_120n.png" height="25" width="127" alt="Logo"></amp-img>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 col-md-1 i-contact">
+                    <a href="#" title="Hỗ trợ online">
+                        <amp-img class="img-fluid" src="../assets/dddd.png" height="82" width="76" layout="responsive" alt="Red Status"></amp-img>
+                    </a>
+                    <a href="#" class="top-up"><i class="fas fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="../OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="../js/mobile/main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>

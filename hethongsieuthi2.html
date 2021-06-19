@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống siêu thị 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/30dda5888f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</head>
+
+<body>
+    <!-- header: start -->
+    <header class="header">
+        <div class="container-fluid app-navbar">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light col-12 d-md-flex justify-content-between px-0">
+                        <a class="navbar-brand p-0" href="trangchu.html">
+                            <img src="assets/logo1.png" class="img-fluid" alt="logo1.png">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active mt-2 mt-lg-0">
+                                    <form action="post" class="form-inline">
+                                        <select class="form-control branch-input text-center" name="" id="">
+                                            <option selected>Chi nhánh</option>
+                                            <option>Hà Nội</option>
+                                            <option>Hồ Chí Minh</option>
+                                        </select>
+                                        <div class="search-input ml-lg-1 mt-1 mt-lg-0">
+                                            <input type="text" name="" id="" placeholder="Nhập sản phẩm cần tìm kiếm">
+                                            <a href="#" type="button"><i class="fas fa-search"></i></i></a>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                            <ul class="nav header-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link header-menu-item" href="#">
+                                        <img class="img-fluid" src="assets/2606/Path 9.png" alt="">
+                                        <br>
+                                        <p class="font-14">Sản phẩm đã xem</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link header-menu-item" href="trangtintuc.html">
+                                        <img class="img-fluid" src="assets/2606/newspaper (1).png" alt="">
+                                        <br>
+                                        <p class="font-14">Tin tức</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link header-menu-item" href="giohang.html">
+                                        <img class="img-fluid" src="assets/2606/shopping-cart (1).png" alt="">
+                                        <br>
+                                        <p class="font-14">Giỏ hàng</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row py-1">
+                <div class="col-md-2 col-12 border-right text-center cate">
+                    <a href="trangdanhmuc.html" class="header-bar-item"><i class="fas fa-bars mr-md-2 mr-1"></i>Danh mục sản phẩm</a>
+                    <section class="container cate-field pt-3">
+                        <div class="row h-100 position-relative">
+                            <div class="col-12 p-md-0 catalog">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <img src="assets/8.png" class="mr-lg-2 mr-1 img-fluid">
+                                                <span>Thiết bị nhà bếp</span>
+                                            </div>
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                        <div class="submenu">
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong
+                                                        class="d-flex justify-content-between align-items-center">Nồi
+                                                        nấu công
+                                                        nghiệp<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu phở</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cánh khuấy CN</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cháo công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi tráng bánh cuốn</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu rượu</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu sữa công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi đồ xôi</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi điện công nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi hấp cơm</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong
+                                                        class="d-flex justify-content-between align-items-center">Nồi
+                                                        nấu công
+                                                        nghiệp<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu phở</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cánh khuấy CN</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cháo công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi tráng bánh cuốn</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu rượu</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu sữa công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi đồ xôi</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi điện công nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi hấp cơm</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <img src="assets/7.png" class="mr-lg-2 mr-1 img-fluid">
+                                                <span>Máy chế biến thịt</span>
+                                            </div>
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                        <div class="submenu">
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong
+                                                        class="d-flex justify-content-between align-items-center">Nồi
+                                                        nấu công
+                                                        nghiệp<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu phở</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cánh khuấy CN</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cháo công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi tráng bánh cuốn</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu rượu</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu sữa công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi đồ xôi</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi điện công nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi hấp cơm</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <img src="assets/4.png" class="mr-lg-2 mr-1 img-fluid">
+                                                <span>Thiết bị làm bánh</span>
+                                            </div>
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                        <div class="submenu">
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong
+                                                        class="d-flex justify-content-between align-items-center">Nồi
+                                                        nấu công
+                                                        nghiệp<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu phở</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cánh khuấy CN</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cháo công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi tráng bánh cuốn</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu rượu</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu sữa công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi đồ xôi</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi điện công nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi hấp cơm</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong
+                                                        class="d-flex justify-content-between align-items-center">Nồi
+                                                        nấu công
+                                                        nghiệp<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu phở</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cánh khuấy CN</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cháo công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi tráng bánh cuốn</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu rượu</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu sữa công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi đồ xôi</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi điện công nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi hấp cơm</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <img src="assets/2.png" class="mr-lg-2 mr-1img-fluid">
+                                                <span>Máy chế biến nông sản</span>
+                                            </div>
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                        <div class="submenu">
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong
+                                                        class="d-flex justify-content-between align-items-center">Nồi
+                                                        nấu công
+                                                        nghiệp<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu phở</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cánh khuấy CN</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cháo công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi tráng bánh cuốn</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu rượu</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu sữa công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi đồ xôi</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi điện công nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi hấp cơm</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong
+                                                        class="d-flex justify-content-between align-items-center">Nồi
+                                                        nấu công
+                                                        nghiệp<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu phở</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cánh khuấy CN</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cháo công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi tráng bánh cuốn</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu rượu</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu sữa công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi đồ xôi</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi điện công nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi hấp cơm</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong
+                                                        class="d-flex justify-content-between align-items-center">Nồi
+                                                        nấu công
+                                                        nghiệp<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu phở</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cánh khuấy CN</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cháo công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi tráng bánh cuốn</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu rượu</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu sữa công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi đồ xôi</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi điện công nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi hấp cơm</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <img src="assets/3.png" class="mr-lg-2 mr-1img-fluid">
+                                                <span>Thiết bị làm đồ ăn nhanh</span>
+                                            </div>
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                        <div class="submenu">
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong
+                                                        class="d-flex justify-content-between align-items-center">Nồi
+                                                        nấu công
+                                                        nghiệp<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu phở</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cánh khuấy CN</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cháo công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi tráng bánh cuốn</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu rượu</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu sữa công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi đồ xôi</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi điện công nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi hấp cơm</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <img src="assets/6.png" class="mr-lg-2 mr-1img-fluid">
+                                                <span>Máy chế biến thực phẩm</span>
+                                            </div>
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <img src="assets/5.png" class="mr-lg-2 mr-1img-fluid">
+                                                <span>Dây chuyền thiết bị</span>
+                                            </div>
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                        <div class="submenu">
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong
+                                                        class="d-flex justify-content-between align-items-center">Nồi
+                                                        nấu công
+                                                        nghiệp<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu phở</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cánh khuấy CN</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cháo công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi tráng bánh cuốn</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu rượu</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu sữa công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi đồ xôi</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi điện công nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi hấp cơm</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong
+                                                        class="d-flex justify-content-between align-items-center">Nồi
+                                                        nấu công
+                                                        nghiệp<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu phở</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cánh khuấy CN</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu cháo công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi tráng bánh cuốn</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu rượu</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi nấu sữa công
+                                                    nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi đồ xôi</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi điện công nghiệp</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Nồi hấp cơm</a>
+                                            </aside>
+                                            <aside>
+                                                <div class="border-bottom">
+                                                    <strong class="d-flex justify-content-between align-items-center">Lò
+                                                        nướng<a href="trangdanhmuc.html" class="">Xem tất cả <i
+                                                                class="fas fa-chevron-right text-primary"></i></a></strong>
+                                                </div>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò quay vịt gà heo </a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng Salamander</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng đa năng</a>
+                                                <a href="trangdanhmuc.html" class="text-dark">Lò nướng thịt</a>
+                                            </aside>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="#" class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex">
+                                                <img src="assets/1.png" class="mr-lg-2 mr-1img-fluid">
+                                                <span>Linh kiện - Phụ kiện</span>
+                                            </div>
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-4 col-12 text-center border-right">
+                    <a href="trangsanpham.html" class="header-bar-item d-flex align-items-center">
+                        <span class="mr-md-4 mr-1 text-center" id="dot">
+                            <span class="ping"></span>
+                        </span>
+                        <span>Máy xay giò chả NEWSUN giảm giá sốc</span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="row">
+                        <div class="col border-right text-center">
+                            <a href="trangsanpham.html" class="header-bar-item"><span class="text-dark-2">Nồi nấu phở
+                                    NEWSUN</span></a>
+                        </div>
+                        <div class="col border-right text-center">
+                            <a href="trangsanpham.html" class="header-bar-item"><span class="text-dark-2">Nồi nấu phở
+                                    NEWSUN</span></a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="trangsanpham.html" class="header-bar-item"><span class="text-dark-2">Nồi nấu phở
+                                    NEWSUN</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header: end -->
+    <section class="section-hethongdieuthi2">
+        <div class="hethongdsieuthi2">
+            <div class="container pl-0">
+                <div class="row pt-4 pb-2">
+
+                    <div class="col-md-8 left pr-0">
+                        <div class="col-md-12">
+                            <ul class="ns-breadcrumb">
+                                <li><a href="http://newsun.nanoweb.vn">Trang chủ</a></li>
+                                <li class="active">Hệ thống siêu thị điện máy NEWSUN</li>
+                                <li class="active">Siêu thị điện máy NEWSUN chi nhánh Hà Nội</li>
+
+                            </ul>
+                        </div>
+                        <div class="col-md-12 text-lg-left mt-4">
+                            <h3 class="text-lg-left text-center">Siêu thị Điện máy NEWSUN chi nhánh Hà Nội</h3>
+                            <div class="maps-newsun">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.128399017717!2d105.80232361424459!3d20.987489594563403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acc016bbef7f%3A0x809e3caa9c39c57e!2zMjggTmfDtSAxNjggTmd1eeG7hW4gWGnhu4NuLCBI4bqhIMSQw6xuaCwgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1592898195995!5m2!1sen!2s" width="600" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="w-100"></iframe>
+                            </div>
+                            <p>Siêu thị điện máy NEWSUN chi nhánh Hà Nội khai trương ngày 27/5/2020 phục vụ nhu cầu mua sắm,
+                                trải nghiệm sản phẩm điện máy đến khách hàng</p>
+                            <p>Siêu thị điện máy NEWSUN chi nhánh Hà Nội cung cấp các giá trị phục vụ cho khách hàng</p>
+                            <p><i class="fas fa-check" aria-hidden="true"></i> Bãi giữ xe miễn phí rộng rãi, thoáng mát
+                                , nhân viên giữ xe chu đáo, dắt xe cho khách.</p>
+                            <p><i class="fas fa-check"></i> Hàng hóa đa dạng từ nhóm hàng ... phụ kiện.</p>
+                            <p><i class="fas fa-check"></i> Có quầy tư vấn mua trả góp sản phẩm.</p>
+                            <p><i class="fas fa-check"></i> Nhân viên tư vấn nhiệt tình, có nhiều kinh nghiệm.</p>
+                            <p><i class="fas fa-check"></i> giá cả cạnh tranh trong khu vực, luôn luôn có khuyến mãi tất
+                                cả các nhóm hàng.</p>
+                            <p><i class="fas fa-check"></i> Giao hàng miễn phí phạm vi dưới 10km.</p>
+                            <p><i class="fas fa-check"></i> Chính sách bảo hành đổi trả hấp dẫn, đơn giản( Xem <span>
+                                    chính sách bảo hành đổi trả</span> tại siêu thị điện máy NEWSUN.</p>
+                            <p><i class="fas fa-check"></i> Với mục tiêu lấy khách hàng làm trọng tâm, Siêu thị điện máy NEWSUN
+                                mong muốn mang lại sản phẩm phù hợp với nhu cầu khách hàng, giá cả tốt nhất và dịch vụ khách hàng hoàn hảo </p>
+                        </div>
+
+                        <div class="section-comment">
+                            <div class="container">
+                                <div class="row pb-3">
+                                    <div class="col-md-12 mt-3">
+                                        <textarea rows="9" cols="70" name="messenger" form="usrform" class="w-100 p-2">
+
+                                </textarea>
+                                        <input type="submit" name="Gửi" class="btn text-center">
+                                    </div>
+                                    <div class="col-12 d-flex pt-4 item-comment">
+                                        <div class="col-md-1 col-2 pl-0">
+                                            <img src="assets/20.png" class="w-100">
+                                        </div>
+                                        <div class="col-md-11 col-10 itemcmt">
+                                            <div class="content-box d-flex">
+                                                <a href="#" class="mr-2"><strong>Nguyễn Thu Hương</strong></a>
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                            </div>
+                                            <p class="mb-0">Mới mua được mấy ngày thấy chất lượng rất tốt. Ủng hộ NewSun</p>
+                                            <div class="content-box d-flex">
+                                                <p class="mb-0">10</p>
+                                                <i class="fas fa-thumbs-up align-bottom"></i>
+                                                <p class="mb-0 ml-3">1 trả lời</p>
+                                                <i class="fas fa-comments"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex pt-3 item-comment">
+                                        <div class="col-md-1 col-2 pl-0">
+                                            <img src="assets/20.png" class="w-100">
+                                        </div>
+                                        <div class="col-md-11 col-10 itemcmt">
+                                            <div class="content-box d-flex">
+                                                <a href="#" class="mr-2"><strong>Nguyễn Thu Hương</strong></a>
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                            </div>
+                                            <p class="mb-0">Mới mua được mấy ngày thấy chất lượng rất tốt. Ủng hộ NewSun</p>
+                                            <div class="content-box d-flex">
+                                                <p class="mb-0">10</p>
+                                                <i class="fas fa-thumbs-up"></i>
+                                                <p class="mb-0 ml-3">1 trả lời</p>
+                                                <i class="fas fa-comments"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex pt-3 item-comment">
+                                        <div class="col-md-1 col-2 pl-0">
+                                            <img src="assets/20.png" class="w-100">
+                                        </div>
+                                        <div class="col-md-11 col-10 itemcmt">
+                                            <div class="content-box d-flex">
+                                                <a href="#" class="mr-2"><strong>Nguyễn Thu Hương</strong></a>
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                            </div>
+                                            <p class="mb-0">Mới mua được mấy ngày thấy chất lượng rất tốt. Ủng hộ NewSun</p>
+                                            <div class="content-box d-flex">
+                                                <p class="mb-0">10</p>
+                                                <i class="fas fa-thumbs-up"></i>
+                                                <p class="mb-0 ml-3">1 trả lời</p>
+                                                <i class="fas fa-comments"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex pt-3 item-comment">
+                                        <div class="col-md-1 col-2 pl-0">
+                                            <img src="assets/20.png" class="w-100">
+                                        </div>
+                                        <div class="col-md-11 col-10 itemcmt">
+                                            <div class="content-box d-flex">
+                                                <a href="#" class="mr-2"><strong>Nguyễn Thu Hương</strong></a>
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                            </div>
+                                            <p class="mb-0">Mới mua được mấy ngày thấy chất lượng rất tốt. Ủng hộ NewSun</p>
+                                            <div class="content-box d-flex">
+                                                <p class="mb-0">10</p>
+                                                <i class="fas fa-thumbs-up"></i>
+                                                <p class="mb-0 ml-3">1 trả lời</p>
+                                                <i class="fas fa-comments"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex pt-3 item-comment">
+                                        <div class="col-md-1 col-2 pl-0">
+                                            <img src="assets/20.png" class="w-100">
+                                        </div>
+                                        <div class="col-md-11 col-10 itemcmt">
+                                            <div class="content-box d-flex">
+                                                <a href="#" class="mr-2"><strong>Nguyễn Thu Hương</strong></a>
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                                <img class="img-fluid px-2 star star" src="assets/star.svg" alt="Star">
+                                            </div>
+                                            <p class="mb-0">Mới mua được mấy ngày thấy chất lượng rất tốt. Ủng hộ NewSun</p>
+                                            <div class="content-box d-flex">
+                                                <p class="mb-0">10</p>
+                                                <i class="fas fa-thumbs-up"></i>
+                                                <p class="mb-0 ml-3">1 trả lời</p>
+                                                <i class="fas fa-comments"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex loadcmt" align="center">
+                                        <a href="#" class="mx-auto pl-5 pr-5 text-center btn mt-2">Xem thêm bình luận<i class="fas fa-chevron-right" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-4 right right-slogan">
+                        <div class="col-md-12 hethong-items">
+                            <p>Chi nhánh Hà Nội<i class="fas fa-chevron-down" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="col-md-12 info-items w-100">
+                            <img src="assets/hethong1.png" class="w-100">
+                            <p>Phong cách phục vụ chuyên nghiệp , tân tình chu đáo là cảm nhận rõ nét nhất
+                                khi khách hàng đến với NEWSUN. Với mục tiêu không ngừng phát triển để mang lại những giá trị tốt nhất
+                                cho khách hàng. <b>NEWSUN HÀ NỘI</b> hân hạnh cung cấp mọi sản phẩm chính hãng
+                                phục vụ cho nhu cầu khách hàng miền Bắc</p>
+                            <p><strong><span>Địa chỉ: </span></strong>Số 28 ngõ 168 Nguyễn Xiển - Thanh Xuân - Hà Nội ( cách ngã tư Khuất Duy Tiến 200m )</p>
+                            <p><strong><span>Số điện thoại: </span></strong>0961 555 155 / 0934 66 88 11</p>
+                            <p><strong><span>Email: </span></strong>newsun@dienmaynewsun.com</p>
+                            <p><strong>Thời gian làm việc: </strong>Từ 8:00 tới 18:00 tất cả các ngày (trừ CN)</p>
+                        </div>
+                        <div class="content-box">
+                            <div class="box-slogan">
+                                <div class="col-md-12 iblock">
+                                    <div class="col-md-2 col-12 image">
+                                        <img src="assets/qv.svg">
+                                    </div>
+                                    <div class="col-md-8 col-12 title-slogan pl-0 pr-0">
+                                        <h2>MUA NHƯ VUA CHĂM SÓC NHƯ VIP</h2>
+                                    </div>
+                                    <div class="col-md-2 col-12 image">
+                                        <img src="assets/qv.svg">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 iblock">
+                                    <div class="img">
+                                        <img src="assets/setting.svg">
+                                    </div>
+                                    <p class="text">Miễn phí công lắp đặt</p>
+                                </div>
+                                <div class="col-md-12 iblock">
+                                    <div class="img">
+                                        <img src="assets/c6.png">
+                                    </div>
+                                    <p class="text">Lỗi là đổi mới trong 1 tháng tận nhà.</p>
+                                </div>
+                                <div class="col-md-12 iblock">
+                                <div class="img">
+                                    <img src="assets/chatmobie.jpg">
+                                </div>
+                                <p class="text">Đổi trả và bảo hành cực dễ chỉ cần số điện thoại</p>
+                            </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <hr class="hr">
+                <div class="section-tag">
+                    <div class="container">
+                        <div class="row pt-3 pb-2 gutter-15">
+                            <div class="col-md-12 pb-2 title">
+                                <h4>Từ khóa tìm kiếm nhiều: </h4>
+                            </div>
+                            <div class="col-md-12 col-12 d-flex flex-wrap pb-0 pl-0 items-tags">
+                                <div class="col-md-2 col-6 tags pb-2 pt-2">
+                                    <div class="col-md-12 tag">
+                                        <a href="#" class="">#Máy xay giò chả</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 tags pb-2 pt-2">
+                                    <div class="col-md-12 tag">
+                                        <a href="#" class="">#Máy xay giò chả</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 tags pb-2 pt-2">
+                                    <div class="col-md-12 tag">
+                                        <a href="#" class="">#Máy xay giò chả</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 tags pb-2 pt-2">
+                                    <div class="col-md-12 tag">
+                                        <a href="#" class="">#Máy xay giò chả</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 tags pb-2 pt-2">
+                                    <div class="col-md-12 tag">
+                                        <a href="#" class="">#Máy xay giò chả</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 tags pb-2 pt-2">
+                                    <div class="col-md-12 tag">
+                                        <a href="#" class="">#Máy xay giò chả</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 tags pb-2 pt-2">
+                                    <div class="col-md-12 tag">
+                                        <a href="#" class="">#Máy xay giò chả</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 tags pb-2 pt-2">
+                                    <div class="col-md-12 tag">
+                                        <a href="#" class="">#Máy xay giò chả</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 tags pb-2 pt-2">
+                                    <div class="col-md-12 tag">
+                                        <a href="#" class="">#Máy xay giò chả</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 tags pb-2 pt-2">
+                                    <div class="col-md-12 tag">
+                                        <a href="#" class="">#Máy xay giò chả</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 tags pb-2 pt-2">
+                                    <div class="col-md-12 tag">
+                                        <a href="#" class="">#Máy xay giò chả</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-6 tags pb-2 pt-2">
+                                    <div class="col-md-12 tag">
+                                        <a href="#" class="">#Máy xay giò chả</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="container-fluid mt-md-3 mt-2">
+        <div class="row p-md-4 p-2 footer-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 pl-lg-0 pt-2">
+                        <h6 class="font-weight-bold">THÔNG TIN NEWSUN</h6>
+                        <div>
+                            <div class="py-1">
+                                <a href="#">Hệ thống 5 cửa hàng (8:00 - 22:00)</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">Giới thiệu công ty</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">Tìm việc làm</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">Liên hệ góp ý</a>
+                            </div>
+                        </div>
+                        <div class="collapse" id="ns-info">
+                            <div class="py-1">
+                                <a href="#">Nội dung cửa hàng</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">In hóa đơn điện tử</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">Bán hàng doanh nghiệp</a>
+                            </div>
+                        </div>
+                        <a class="font-weight-bold" data-toggle="collapse" href="#ns-info" role="button" aria-expanded="false" aria-controls="ns-info">Xem thêm <i class="fas fa-chevron-down"></i></a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-flex flex-column pt-2">
+                        <h6 class="font-weight-bold">HỖ TRỢ KHÁCH HÀNG</h6>
+                        <div>
+                            <div class="py-1">
+                                <a href="#">Tìm hiểu về mua trả góp</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">Giao hàng và lắp đặt</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">Bảo hành, đổi trả</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">Dịch vụ vệ sinh máy</a>
+                            </div>
+                        </div>
+                        <div class="collapse" id="ns-support">
+                            <div class="py-1">
+                                <a href="#">Tìm trung tâm bảo hành</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">Chất lượng phục vụ</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">Hướng dẫn trao thưởng</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">Hướng dẫn mua hàng</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">Chính sách khui hộp sản phẩm</a>
+                            </div>
+                            <div class="py-1">
+                                <a href="#">Xem bản mobile</a>
+                            </div>
+                        </div>
+                        <a class="font-weight-bold" data-toggle="collapse" href="#ns-support" role="button" aria-expanded="false" aria-controls="ns-support">Xem thêm <i class="fas fa-chevron-down"></i></a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-flex flex-column pt-2">
+                        <h6 class="font-weight-bold">TỔNG ĐÀI HỖ TRỢ (GỌI MIỄN PHÍ)</h6>
+                        <table>
+                            <tr>
+                                <td>
+                                    <span>Mua hàng: <span class="font-weight-bold">0934.6688.11</span></span>
+                                </td>
+                                <td class="pl-2">
+                                    <span>8:00 - 22:00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Kỹ thuật: <span class="font-weight-bold">096.139.1551</span></span>
+                                </td>
+                                <td class="pl-2">
+                                    <span>8:00 - 22:00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Bảo hành: <span class="font-weight-bold">03.8871.8871</span></span>
+                                </td>
+                                <td class="pl-2">
+                                    <span>8:00 - 22:00</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span>Khiếu nại: <span class="font-weight-bold">03.8871.8871</span></span>
+                                </td>
+                                <td class="pl-2">
+                                    <span>8:00 - 22:00</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#">
+                                <img src="assets/14971568174511_da-thong-bao-bo-cong-thuong.png" alt="Cer">
+                            </a>
+                            <a href="#">
+                                <img src="assets/dmca_protected_sml_120n.png" alt="Cer">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 d-flex flex-column social pr-md-0 pt-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f mr-2"></i>12,345 lượt thích</a>
+                            <a href="#"><i class="fab fa-youtube mr-2"></i>12,345 đăng ký</a>
+                        </div>
+                        <p class="mt-4">Website cùng tập đoàn:</p>
+                        <a href="trangchu.html" title="">
+                            <img class="logo" src="assets/logo.png" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-2 py-2">
+            <div class="container">
+                <p>© 2018. Công Ty Cổ Phần Sản Xuất Và Xuất Nhập Khẩu Tân Thái Sơn. GPDKKD: 0107742332 do Sở kế hoạch và
+                    đầu tư Tp. Hà Nội cấp ngày 02/01/2007.</p>
+                <p>Địa chỉ: 214/19 đường Nguyễn Xiển, Q. Thanh Xuân, Tp. Hà Nội. Điện thoại: 0934.6688.11. Email:
+                    newsun@dienmaynewsun.com. Xem chính sách sử dụng web</p>
+            </div>
+            <a href="#" class="top-up"><i class="fas fa-arrow-up"></i></a>
+            <a href="#" class="p-0 contact">
+                <img class="contact-icon" src="assets/Group2807.png" alt="Contact">
+            </a>
+            <div class="chat-popup" id="myForm">
+                <div class="head">
+                    <a href="#">
+                        <img src="https://icon-icons.com/icons2/1736/PNG/96/4043236-avatar-boy-male-portrait_113250.png" class="img-fluid avatar" alt="Avatar">
+                        <span>Customer Name</span>
+                    </a>
+                    <a href="#" type="button" class="cancel"><i class="fas fa-window-close"></i></a>
+                </div>
+                <div class="message-field">
+                </div>
+                <form action="#" method="POST">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="typing ...">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-primary" type="button">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <a href="#" class="p-0 messenger">
+                <img src="assets/messenger.svg" alt="Messenger">
+            </a>
+        </div>
+    </footer>
+    <script src="./js/trangchu.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script src="./OwlCarousel/dist/owl.carousel.min.js"></script>
+</body>
+
+</html>

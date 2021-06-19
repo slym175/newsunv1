@@ -1,0 +1,637 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+            "logo.jpg"
+        ]
+    }
+    </script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        amp-img {
+            max-width: 100%;
+        }
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none
+        }
+        </style>
+    </noscript>
+    <script src="https://kit.fontawesome.com/30dda5888f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/mobile/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/30dda5888f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+</head>
+
+<body>
+    <!-- start header -->
+    <header class="">
+        <amp-img src="../assets/mobile/Image 12.png" alt="Banner" height="52" width="375" layout="responsive"></amp-img>
+        <nav class="navbar navbar-expand-xl navbar-light app-nav-bar p-0">
+            <div class="mx-3 d-flex justify-content-between align-items-center w-100">
+                <a class="navbar-brand" href="trangchu.html">
+                    <amp-img src="../assets/mobile/logo1.png" alt="Logo" height="21" width="86"></amp-img>
+                </a>
+                <div class="search-input">
+                    <form action="#" method="POST">
+                        <input type="text" name="search" placeholder="Tìm kiếm tại điện máy">
+                        <a href="#" type="button"><i class="fas fa-search"></i></i></a>
+                    </form>
+                </div>
+                <div class="m-menu">
+                    <a href="#" title="Sản phẩm đã xem" class="p-seen">
+                        <span>Sản phẩm <br> đã xem</span>
+                        <amp-img class="arrow-down" src="../assets/mobile/3006/Polygon12.png" alt="Cart Icon" height="5" width="6"></amp-img>
+                    </a>
+                    <a href="giohang.html" title="Giỏ hàng" class="shopping-cart">
+                        <span>1</span>
+                        <amp-img src="../assets/mobile/shopping-cart (1).svg" alt="Cart Icon" height="18" width="19"></amp-img>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <amp-img src="../assets/mobile/3006/Group2795.png" alt="Cart Icon" height="22" width="23"></amp-img>
+                    </button>
+                </div>
+            </div>
+            <div class="px-3 branch-location">
+                <a href="#">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Xem danh sách các chi nhánh (8:00 - 18:00)</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto pb-3">
+                    <li class="nav-item my-2">
+                        <a class="nav-link text-right btn-c-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span>X đóng</span></a>
+                    </li>
+                    <li class="nav-item app-menu">
+                        <button class="nav-link">
+                            <span>Thiết bị nhà bếp</span>
+                            <div class="submenu p-3">
+                                <h6 class="font-14 mb-3">Thiết bị nhà bếp</h6>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                                    <span class="text-2 font-weight-bold">Nồi nấu công nghiệp</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample1">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                    <span class="text-2 font-weight-bold">Lò nướng</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample2">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                                    <span class="text-2 font-weight-bold">Bếp công nghiệp</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample3">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                                    <span class="text-2 font-weight-bold">Tủ hấp công nghiệp</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample4">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                                    <span class="text-2 font-weight-bold">Máy móc phụ trợ</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample5">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                                    <span class="text-2 font-weight-bold">Máy thái rau củ quả</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample6">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                                    <span class="text-2 font-weight-bold">Thiết bị nhà bếp khác</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample7">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="nav-link">
+                            <span>Máy chế biến thịt</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Thiết bị làm bánh</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Máy chế biến nông sản</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Thiết bị làm đồ ăn nhanh</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Máy chế biến thực phẩm</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Dây chuyền thiết bị</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Linh kiện - Phụ kiện</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+    <div id="app-v-preview" class="overlay">
+        <a href="javascript:void(0)" class="close" onclick="closePopup()">&times;</a>
+        <div class="overlay-content">
+            <div class="embed-responsive">
+                <amp-video controls width="375" height="237" layout="responsive" poster="../assets/post22.png">
+                    <!-- <source src="//D:/HTML/newsunv1/ssets/mobile/demo.mp4" type="video/webm" /> -->
+                    <source src="//D:/HTML/newsunv1/ssets/mobile/demo.mp4" type="video/mp4" />
+                    <div fallback>
+                        <p>This browser does not support the video element.</p>
+                    </div>
+                </amp-video>
+            </div>
+            <div class="text-left p-3">
+                <h5>What is Lorem Ipsum?</h5>
+                <p class="text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h5>Why do we use it?</h5>
+                <p class="text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                <h5>Where does it come from?</h5>
+                <p class="text-justify">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                <p class="text-justify">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+            </div>
+        </div>
+    </div>
+    <!-- start main -->
+    <main>
+        <section class="container hashtags border-bottom">
+            <div class="py-3">
+                <a href="#" class="hashtag">
+                    <p>Máy xay giò chả gia đình</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p>Máy xay giò chả công nghiệp</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p>Máy nướng chả quế</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p>Máy làm chà bông</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p>Máy tạo viên thịt cá</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p>Tủ hấp giò chả</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p>Linh kiện - Phụ kiện</p>
+                </a>
+            </div>
+        </section>
+        <section class="container p-md-0 bb-1">
+            <div class="row">
+                <div class="col-md-6 col-lg-7 col-12 pr-md-0">
+                    <section class="container-fluid py-3 px-0 feature-news">
+                        <div class="row px-3">
+                            <div class="col-12 mb-2 px-0">
+                                <h6 class="font-weight-bold font-14">Tin tức nổi bật:</h6>
+                            </div>
+                        </div>
+                        <div>
+                            <amp-img src="../assets/10.png" height="214" width="375" layout="responsive" alt="Red Status"></amp-img>
+                            <div class="row px-3 py-2">
+                                <div class="col-12 font-14 px-0">
+                                    <a href="chitiettintuc.html" class="d-block font-weight-bold mb-2 text-2 text-justify">Hướng dẫn sử dụng máy xay chả giò công nghiệp tại các xí nghiệp, hợp tác xã trên địa bàn thành phố Hà Nội</a>
+                                    <p class="mb-2 text-dark text-justify">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                                </div>
+                            </div>
+                            <div class="row px-3 mb-2">
+                                <div class="col-12 px-0">
+                                    <a href="#" title="Tags" class="mb-1"><span href="#" title="Tư vấn" class="text-dark bg-2 p-2 rounded font-10"># Tư vấn mua máy xay giò chả</span></a>
+                                    <a href="#" title="Tags" class="mb-1"><span href="#" title="Tư vấn" class="text-dark bg-2 p-2 rounded font-10"># Tư vấn mua máy xay giò chả</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-md-6 col-lg-5 col-12">
+                    <div class="container-fluid px-0 news-video">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Bài viết xem nhiều:</h2>
+                            </div>
+                        </div>
+                        <div class="row nv-normal">
+                            <div class="col col-md-5 img-container">
+                                <span class="nv-flag"></span>
+                                <span class="nv-index">1</span>
+                                <amp-img class="img-fluid" src="../assets/post22.png" height="81" width="164" layout="responsive" alt="Red Status"></amp-img>
+                            </div>
+                            <div class="col col-md-7 pl-0">
+                                <a href="chitiettintuc.html" title="">
+                                    <h4 class="font-weight-bold lh-125">Hướng dẫn sử dụng máy xay giò chả</h4>
+                                </a>
+                                <p class="m-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>
+                        </div>
+                        <div class="row nv-normal">
+                            <div class="col col-md-5 img-container">
+                                <span class="nv-flag"></span>
+                                <span class="nv-index">2</span>
+                                <amp-img class="img-fluid" src="../assets/post22.png" height="81" width="164" layout="responsive" alt="Red Status"></amp-img>
+                            </div>
+                            <div class="col col-md-7 pl-0">
+                                <a href="chitiettintuc.html" title="">
+                                    <h4 class="font-weight-bold lh-125">Hướng dẫn sử dụng máy xay giò chả</h4>
+                                </a>
+                                <p class="m-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>
+                        </div>
+                        <div class="row nv-normal">
+                            <div class="col col-md-5 img-container">
+                                <span class="nv-flag"></span>
+                                <span class="nv-index">3</span>
+                                <amp-img class="img-fluid" src="../assets/234324.png" height="81" width="164" layout="responsive" alt="Red Status"></amp-img>
+                            </div>
+                            <div class="col col-md-7 pl-0">
+                                <a href="chitiettintuc.html" title="">
+                                    <h4 class="font-weight-bold lh-125">Hướng dẫn sử dụng máy xay giò chả</h4>
+                                </a>
+                                <p class="m-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>
+                        </div>
+                        <div class="row nv-normal">
+                            <div class="col col-md-5 img-container">
+                                <span class="nv-flag"></span>
+                                <span class="nv-index">4</span>
+                                <amp-img class="img-fluid" src="../assets/234324.png" height="81" width="164" layout="responsive" alt="Red Status"></amp-img>
+                            </div>
+                            <div class="col col-md-7 pl-0">
+                                <a href="chitiettintuc.html" title="">
+                                    <h4 class="font-weight-bold lh-125">Hướng dẫn sử dụng máy xay giò chả</h4>
+                                </a>
+                                <p class="m-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>
+                        </div>
+                        <div class="row nv-normal">
+                            <div class="col col-md-5 img-container">
+                                <span class="nv-flag"></span>
+                                <span class="nv-index">5</span>
+                                <amp-img class="img-fluid" src="../assets/234324.png" height="81" width="164" layout="responsive" alt="Red Status"></amp-img>
+                            </div>
+                            <div class="col col-md-7 pl-0">
+                                <a href="chitiettintuc.html" title="">
+                                    <h4 class="font-weight-bold lh-125">Hướng dẫn sử dụng máy xay giò chả</h4>
+                                </a>
+                                <p class="m-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container py-2 border-bottom bg-3">
+            <div class="row">
+                <div class="col-12">
+                    <h6 class="text-white font-14">Video:</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <!-- <amp-selector id="carouselPreview" class="carousel-preview" on="select:carouselWithPreview.goToSlide(index=event.targetOption)" layout="container">
+                        <amp-img option="0" selected src="https://unsplash.it/60/40?image=10" width="60" height="40" alt="a sample image"></amp-img>
+                        <amp-img option="1" src="https://unsplash.it/60/40?image=11" width="60" height="40" alt="a sample image"></amp-img>
+                        <amp-img option="2" src="https://unsplash.it/60/40?image=12" width="60" height="40" alt="a sample image"></amp-img>
+                        <amp-img option="3" src="https://unsplash.it/60/40?image=13" width="60" height="40" alt="a sample image"></amp-img>
+                    </amp-selector>
+                    <amp-carousel id="carouselWithPreview" width="400" height="300" layout="responsive" type="slides" on="slideChange:carouselPreview.toggle(index=event.index, value=true)">
+                        <amp-img src="https://unsplash.it/400/200?image=10" layout="fill" alt="a sample image"></amp-img>
+                        <amp-img src="https://unsplash.it/400/00?image=11" layout="fill" alt="a sample image"></amp-img>
+                        <amp-img src="https://unsplash.it/400/300?image=12" layout="fill" alt="a sample image"></amp-img>
+                        <amp-img src="https://unsplash.it/400/300?image=13" layout="fill" alt="a sample image"></amp-img>
+                    </amp-carousel> -->
+                    <div class="owl-carousel owl-theme video-carousel">
+                        <div class="item">
+                            <amp-img class="img-fluid" src="../assets/234324.png" height="200" width="317" layout="responsive" alt="Red Status"></amp-img>
+                            <a href="#" title="">
+                                <h6 class="mt-2 text-white font-14 lh-15">Tư vấn cách mua máy xay giò chả gia đình phù hợp nhu cầu, túi tiền, chất lượng tốt nhất.</h6>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <amp-img class="img-fluid" src="../assets/234324.png" height="200" width="317" layout="responsive" alt="Red Status"></amp-img>
+                            <a href="#" title="">
+                                <h6 class="mt-2 text-white font-14 lh-15">Tư vấn cách mua máy xay giò chả gia đình phù hợp nhu cầu, túi tiền, chất lượng tốt nhất.</h6>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <amp-img class="img-fluid" src="../assets/234324.png" height="200" width="317" layout="responsive" alt="Red Status"></amp-img>
+                            <a href="#" title="">
+                                <h6 class="mt-2 text-white font-14 lh-15">Tư vấn cách mua máy xay giò chả gia đình phù hợp nhu cầu, túi tiền, chất lượng tốt nhất.</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="v-nav v-next">
+                        <img src="../assets/mobile/next.svg" alt="next">
+                    </button>
+                    <button class="v-nav v-prev">
+                        <img src="../assets/mobile/prev.svg" alt="prev">
+                    </button>
+                </div>
+            </div>
+            <div id="v-dots-container"></div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <a href="trangtintuc.html" title="" class="yt-newsun">
+                        Xem thêm video tại kênh Youtube NEWSUN
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-3 px-0 l-feature-news border-top">
+            <div class="py-3 border-bottom">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <amp-img src="../assets/10.png" height="214" width="375" layout="responsive" alt="Red Status"></amp-img>
+                    </div>
+                    <div class="col-12 col-md-8 font-14">
+                        <div class="mt-2 px-3 px-md-0 mt-md-0">
+                            <a href="chitiettintuc.html" class="font-weight-bold text-2">Hướng dẫn sử dụng máy xay chả giò công nghiệp tại các xí nghiệp, hợp tác xã trên địa bàn thành phố Hà Nội</a>
+                        </div>
+                        <div class="text-dark mt-2 px-3 px-md-0">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        </div>
+                        <div class="px-3 px-md-0">
+                            <a href="#" title="Tags" class="mb-1"><span href="#" title="Tư vấn" class="text-dark bg-2 p-2 rounded font-10"># Tư vấn mua máy xay giò chả</span></a>
+                            <a href="#" title="Tags" class="mb-1"><span href="#" title="Tư vấn" class="text-dark bg-2 p-2 rounded font-10"># Tư vấn mua máy xay giò chả</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3 border-bottom">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <amp-img src="../assets/10.png" height="214" width="375" layout="responsive" alt="Red Status"></amp-img>
+                    </div>
+                    <div class="col-12 col-md-8 font-14">
+                        <div class="mt-2 px-3 px-md-0 mt-md-0">
+                            <a href="chitiettintuc.html" class="font-weight-bold text-2">Hướng dẫn sử dụng máy xay chả giò công nghiệp tại các xí nghiệp, hợp tác xã trên địa bàn thành phố Hà Nội</a>
+                        </div>
+                        <div class="text-dark mt-2 px-3 px-md-0">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        </div>
+                        <div class="px-3 px-md-0">
+                            <a href="#" title="Tags" class="mb-1"><span href="#" title="Tư vấn" class="text-dark bg-2 p-2 rounded font-10"># Tư vấn mua máy xay giò chả</span></a>
+                            <a href="#" title="Tags" class="mb-1"><span href="#" title="Tư vấn" class="text-dark bg-2 p-2 rounded font-10"># Tư vấn mua máy xay giò chả</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3 border-bottom">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <amp-img src="../assets/10.png" height="214" width="375" layout="responsive" alt="Red Status"></amp-img>
+                    </div>
+                    <div class="col-12 col-md-8 font-14">
+                        <div class="mt-2 px-3 px-md-0 mt-md-0">
+                            <a href="chitiettintuc.html" class="font-weight-bold text-2">Hướng dẫn sử dụng máy xay chả giò công nghiệp tại các xí nghiệp, hợp tác xã trên địa bàn thành phố Hà Nội</a>
+                        </div>
+                        <div class="text-dark mt-2 px-3 px-md-0">
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        </div>
+                        <div class="px-3 px-md-0">
+                            <a href="#" title="Tags" class="mb-1"><span href="#" title="Tư vấn" class="text-dark bg-2 p-2 rounded font-10"># Tư vấn mua máy xay giò chả</span></a>
+                            <a href="#" title="Tags" class="mb-1"><span href="#" title="Tư vấn" class="text-dark bg-2 p-2 rounded font-10"># Tư vấn mua máy xay giò chả</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex justify-content-center">
+            <a href="#" class="btn btn-outline-primary">Xem thêm <i class="fas fa-angle-right ml-3"></i></a>
+        </section>
+    </main>
+    <!-- end main -->
+    <!-- start footer -->
+    <footer class="mt-3 pt-3 border-top footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <h2 class="my-2 mt-0 font-14">TỔNG ĐÀI HỖ TRỢ (GỌI MIỄN PHÍ)</h2>
+                    <table class="mb-2 font-14 w-100">
+                        <tbody>
+                            <tr class="text-2">
+                                <td class="py-1">Mua hàng: <strong class="font-weight-bold">0934.6688.11</strong></td>
+                                <td class="py-1 pl-3">(8:00 - 22:00)</td>
+                            </tr>
+                            <tr class="text-2">
+                                <td class="py-1">Kỹ thuật: <strong class="font-weight-bold">096.139.1551</strong></td>
+                                <td class="py-1 pl-3">(8:00 - 22:00)</td>
+                            </tr>
+                            <tr class="text-2">
+                                <td class="py-1">Bảo hành: <strong class="font-weight-bold">03.8871.8871</strong></td>
+                                <td class="py-1 pl-3">(8:00 - 22:00)</td>
+                            </tr>
+                            <tr class="text-2">
+                                <td class="py-1">Khiếu nại: <strong class="font-weight-bold">03.8871.8871</strong></td>
+                                <td class="py-1 pl-3">(8:00 - 22:00)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-3 col-12 o-place pl-md-0">
+                    <h4 class="my-2">Xem 4 siêu thị (8:00 - 22:00 )</h4>
+                    <div class="o-place-info">
+                        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Các thông tin khác <i class="fas fa-angle-down ml-3"></i></a>
+                        <div class="collapse" id="collapseExample">
+                            <h6>Số 28 Ngõ 168 Nguyễn Xiển - Thanh Xuân - Hà Nội</h6>
+                            <h6>Số 75 Nguyễn Năng Tĩnh, Tp. Vinh, Nghệ An</h6>
+                            <h6>Số 100 Tôn Đức Thắng - Q. Liên Chiểu - Đà Nẵng (Cách bến xe Đà Nẵng 500m).</h6>
+                            <h6>27 Thoại Ngọc Hầu, Vĩnh Hòa, Tp. Nha Trang, Khánh Hòa</h6>
+                            <h6>Số 84 Nguyễn Xí - P.26 - Q. Bình Thạnh - Hồ Chí Minh (Cạnh bến xe Miền Đông)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-md-4 pl-md-0">
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <a href="#" class="font-13"><i class="fab fa-facebook-f mr-2"></i>12,345K lượt thích</a>
+                        <a href="#" class="font-13"><i class="fab fa-youtube mr-2"></i>12,345K đăng ký</a>
+                    </div>
+                    <p class="mt-4">Website cùng tập đoàn:</p>
+                    <a href="trangchu.html" title="Logo">
+                        <amp-img class="img-fluid" src="../assets/logo.png" height="40" width="162" alt="Logo"></amp-img>
+                    </a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="trangchu.html" title="Logo">
+                            <amp-img class="img-fluid" src="../assets/14971568174511_da-thong-bao-bo-cong-thuong.png" height="65" width="108" alt="Logo"></amp-img>
+                        </a>
+                        <a href="trangchu.html" title="Logo">
+                            <amp-img class="img-fluid" src="../assets/dmca_protected_sml_120n.png" height="25" width="127" alt="Logo"></amp-img>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 col-md-1 i-contact">
+                    <a href="#" title="Hỗ trợ online">
+                        <amp-img class="img-fluid" src="../assets/dddd.png" height="82" width="76" layout="responsive" alt="Red Status"></amp-img>
+                    </a>
+                    <a href="#" class="top-up"><i class="fas fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="../OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="../js/mobile/main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>

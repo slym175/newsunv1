@@ -1,0 +1,617 @@
+<!doctype html>
+<html amp lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+            "logo.jpg"
+        ]
+    }
+    </script>
+    <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+    <script async custom-element="amp-lightbox-gallery" src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"></script>
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+    <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both
+        }
+
+        @-webkit-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-moz-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-ms-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @-o-keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden
+            }
+
+            to {
+                visibility: visible
+            }
+        }
+
+        amp-img {
+            max-width: 100%;
+        }
+
+    </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none
+        }
+        </style>
+    </noscript>
+    <script src="https://kit.fontawesome.com/30dda5888f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/mobile/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/30dda5888f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel/dist/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <!-- start header -->
+    <header class="">
+        <amp-img src="../assets/mobile/Image 12.png" alt="Banner" height="52" width="375" layout="responsive"></amp-img>
+        <nav class="navbar navbar-expand-xl navbar-light app-nav-bar p-0">
+            <div class="mx-3 d-flex justify-content-between align-items-center w-100">
+                <a class="navbar-brand" href="trangchu.html">
+                    <amp-img src="../assets/mobile/logo1.png" alt="Logo" height="21" width="86"></amp-img>
+                </a>
+                <div class="search-input">
+                    <form action="#" method="POST">
+                        <input type="text" name="search" placeholder="Tìm kiếm tại điện máy">
+                        <a href="#" type="button"><i class="fas fa-search"></i></i></a>
+                    </form>
+                </div>
+                <div class="m-menu">
+                    <a href="#" title="Sản phẩm đã xem" class="p-seen">
+                        <span>Sản phẩm <br> đã xem</span>
+                        <amp-img class="arrow-down" src="../assets/mobile/3006/Polygon12.png" alt="Cart Icon" height="5" width="6"></amp-img>
+                    </a>
+                    <a href="giohang.html" title="Giỏ hàng" class="shopping-cart">
+                        <span>1</span>
+                        <amp-img src="../assets/mobile/shopping-cart (1).svg" alt="Cart Icon" height="18" width="19"></amp-img>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <amp-img src="../assets/mobile/3006/Group2795.png" alt="Cart Icon" height="22" width="23"></amp-img>
+                    </button>
+                </div>
+            </div>
+            <div class="px-3 branch-location">
+                <a href="#">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Xem danh sách các chi nhánh (8:00 - 18:00)</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto pb-3">
+                    <li class="nav-item my-2">
+                        <a class="nav-link text-right btn-c-menu" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span>X đóng</span></a>
+                    </li>
+                    <li class="nav-item app-menu">
+                        <button class="nav-link">
+                            <span>Thiết bị nhà bếp</span>
+                            <div class="submenu p-3">
+                                <h6 class="font-14 mb-3">Thiết bị nhà bếp</h6>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                                    <span class="text-2 font-weight-bold">Nồi nấu công nghiệp</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample1">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                                    <span class="text-2 font-weight-bold">Lò nướng</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample2">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                                    <span class="text-2 font-weight-bold">Bếp công nghiệp</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample3">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                                    <span class="text-2 font-weight-bold">Tủ hấp công nghiệp</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample4">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                                    <span class="text-2 font-weight-bold">Máy móc phụ trợ</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample5">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample6" aria-expanded="false" aria-controls="collapseExample6">
+                                    <span class="text-2 font-weight-bold">Máy thái rau củ quả</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample6">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                                <a class="b-menu pb-1 mb-1" type="button" data-toggle="collapse" data-target="#collapseExample7" aria-expanded="false" aria-controls="collapseExample7">
+                                    <span class="text-2 font-weight-bold">Thiết bị nhà bếp khác</span>
+                                    <span class="mol-button font-10">Xem tất cả<i class="fas fa-angle-right ml-2"></i></span>
+                                </a>
+                                <div class="collapse mb-2" id="collapseExample7">
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu phở</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cánh khuấy CN</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu cháo công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi tráng bánh cuốn</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu rượu</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi nấu sữa công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi đồ xôi</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi điện công nghiệp</a>
+                                    <a class="text-2 d-block text-left" href="#" title="Link">Nồi hấp cơm</a>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="nav-link">
+                            <span>Máy chế biến thịt</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Thiết bị làm bánh</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Máy chế biến nông sản</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Thiết bị làm đồ ăn nhanh</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Máy chế biến thực phẩm</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Dây chuyền thiết bị</span>
+                        </button>
+                        <button class="nav-link">
+                            <span>Linh kiện - Phụ kiện</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- end header -->
+    <!-- start main -->
+    <main>
+        <section class="container py-3 border-bottom">
+            <div class="row hashtags">
+                <div class="col-12">
+                    <a href="#" class="hashtag">
+                        <p>Máy xay giò chả</p>
+                    </a>
+                    <a href="#" class="hashtag">
+                        <p>Máy làm chà bông</p>
+                    </a>
+                    <a href="#" class="hashtag">
+                        <p>Máy tạo viên thịt cá</p>
+                    </a>
+                    <a href="#" class="hashtag">
+                        <p>Xem thêm <br><i class="fas fa-chevron-down text-primary"></i></p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="container border-bottom pb-3 mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <a class="btn btn-overview" data-toggle="collapse" href="#collapseOverview" role="button" aria-expanded="false" aria-controls="collapseContent">
+                        <i class="fa fa-bars mr-4" aria-hidden="true"></i> Tổng quan máy xay giò chả gia đình
+                    </a>
+                    <div class="collapse" id="collapseOverview">
+                        <a class="btn overview">
+                            Máy xay giò chả 1kg/mẻ <i class="fas font-16 fa-angle-right"></i>
+                        </a>
+                        <a class="btn overview">
+                            Cách sử dụng máy xay giò chả gia đình <i class="fas font-16 fa-angle-right"></i>
+                        </a>
+                        <a class="btn overview">
+                            Chọn mua máy xay giò chả gia đình <i class="fas font-16 fa-angle-right"></i>
+                        </a>
+                        <a class="btn overview">
+                            Hỏi đáp<i class="fas font-16 fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container border-bottom">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="breadcrumb" class="m-breadcrumb">
+                        <ol class="breadcrumb m-0">
+                            <li class="breadcrumb-item"><a href="#">Tin tức</a></li>
+                            <li class="breadcrumb-item"><a href="#">Máy thái thịt</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Máy thái thịt đông lạnh</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="container border-bottom py-3">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="font-16 text-2 font-weight-bold">Hướng dẫn sử dụng máy thái thịt tự động SL 300E hiệu quả, bền lâu</h2>
+                    <div class="card card-body border-0 px-3 py-2 my-3 bg-1">
+                        <button class="btn btn-link btn-block text-left text-decoration-none p-0 mb-1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="fas fa-bars pr-3"></i><span class="font-14 font-weight-bold">Nội dung</span>
+                        </button>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body p-0 pt-0">
+                                <a href="#step-index-1" class="d-block text-justify font-14 text-1">1. Các bước sử dụng máy thái thịt tự động SL 300E</a>
+                                <a href="#step-index-2" class="d-block text-justify font-14 text-1">2. Cách vệ sinh máy thái thịt tự động SL 300E</a>
+                                <a href="#step-index-3" class="d-block text-justify font-14 text-1">3. Cách bảo quản máy thái thịt tự động SL 300E đúng cách</a>
+                                <a href="#step-index-4" class="d-block text-justify font-14 text-1">4. Một số điều cần biết khi sử dụng máy thái thịt tự động SL 300E</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font-14 text-justify m-0">SL 300E là sản phẩm thuộc dòng máy thái thịt tự động, chuyên dùng để thái các loại thịt chín, thịt sống hoặc thịt se lạnh. Máy được dùng phổ biến tại các nhà hàng, quán lẩu hoặc các bếp ăn công nghiệp quy mô lớn. Để máy thái thịt luôn bền bỉ, có tuổi thọ cao, bài viết sau đây sẽ hướng dẫn bạn cách sử dụng máy thái thịt tự động SL 300E hiệu quả.</p>
+                    <div>
+                        <div class="font-14 text-justify">
+                            <h6 id="step-index-1" class="py-2 font-weight-bold">Các bước sử dụng máy thái thịt tự động SL 300E</h6>
+                            <amp-img class="img-fluid my-2" src="../assets/234324.png" height="196" width="337" alt="Logo" layout="responsive"></amp-img>
+                            <p class="font-14 font-weight-bold lh-125">Để sử dụng máy thái thịt tự động SL 300E, bạn thực hiện tuần tự theo các bước sau đây:</p>
+                            <p class="font-14 m-0"><span class="font-weight-bold">Bước 1:</span> Vặn núm bên thân máy để điều chỉnh độ dày mỏng của thịt thành phẩm tới mức phù hợp với nhu cầu. </p>
+                            <p class="font-14 m-0"><span class="font-weight-bold">Bước 2:</span> Cho khối thịt cần thái lên bàn thái sau đó cố định miếng thịt thật chặt. Thông thường 1 miếng thịt có trọng lượng từ 2 – 4kg là vừa đủ. </p>
+                            <p class="font-14 m-0"><span class="font-weight-bold">Bước 3:</span> Đặt khay hứng thịt bên dưới đầu ra của máy. Thịt sẽ tự động rơi xuống khay chứa ngay sau khi thái. </p>
+                            <p class="font-14 m-0"><span class="font-weight-bold">Bước 4:</span> Bật công tắc để gá đỡ thịt bắt đầu hoạt động và đẩy miếng thịt tiến gần đến lưỡi dao đang quay tròn. </p>
+                            <p class="font-14 m-0"><span class="font-weight-bold" s>Bước 5:</span> Bạn chỉ cần đợi khối thịt được thái xong là có thể lấy ra sử dụng. </p>
+                            <p class="font-14 mt-3 font-italic">* Lưu ý: Trong trường hợp cần thái thịt dạng sợi, bạn hãy lấy phần thịt vừa thái ra, xếp các lát chồng lên nhau thành khối rồi đặt vuông góc và cho vào máy để tiếp tục thái lần 2.</p>
+                        </div>
+                        <div class="font-14 text-justify">
+                            <h6 id="step-index-2" class="py-2 font-weight-bold">Cách vệ sinh máy thái thịt tự động SL 300E<</h6> <amp-img class="img-fluid my-2" src="../assets/mobile/Image4.png" height="342" width="342" alt="Logo" layout="responsive">
+                                    </amp-img>
+                                    <p class="font-14 font-weight-bold lh-125">Để đảm bảo máy thái thịt SL 300E luôn sáng bóng, không hạn rỉ, bạn cần vệ sinh máy ngay sau khi sử dụng. Bạn có thể thực hiện theo các bước sau đây:</p>
+                                    <p class="font-14 m-0"><span class="font-weight-bold">Bước 1:</span> Để vệ sinh sau khi sử dụng, bạn tiến hành tắt máy, ngắt kết nối với nguồn điện. </p>
+                                    <p class="font-14 m-0"><span class="font-weight-bold">Bước 2:</span> Lấy toàn bộ vụn thịt còn sót lại trên máy sau đó dùng khăn lau qua cho thật sạch. </p>
+                                    <p class="font-14 m-0"><span class="font-weight-bold">Bước 3:</span> Sử dụng khăn vệ sinh máy bằng nước tẩy rửa sau đó lau lại thật sạch. </p>
+                                    <p class="font-14 mt-3 font-italic">* Lưu ý: Trong quá trình vệ sinh máy thái thịt SL 300E, bạn tuyệt đối không để hệ thống điện bị dính nước.</p>
+                        </div>
+                        <div class="font-14 text-justify">
+                            <h6 id="step-index-3" class="py-2 font-weight-bold">3. Cách bảo quản máy thái thịt tự động SL 300E đúng cách</h6>
+                            <amp-img class="img-fluid" src="../assets/mobile/Image5.png" height="342" width="342" alt="Logo" layout="responsive"></amp-img>
+                            <p class="font-14 my-2 lh-125">Để máy thái thịt có tuổi thọ cao bạn nên bảo quản máy ở những nơi khô ráo, không ẩm thấp, bụi bẩn hoặc môi trường dễ bị nhiễm điện. Ngoài ra, sau khi vệ sinh máy, bạn hãy dùng 1 chút dầu ăn bôi lên lưỡi dao để lưỡi dao luôn sáng bóng, không bị rỉ. Máy thái thịt là thiết bị sắc bén có thể gây nguy hiểm vì vậy bạn nên bảo quản máy ở những nơi xa tầm với trẻ em. Không để máy ở những nơi trẻ em hay vui chơi, đừa nghịch.</p>
+                        </div>
+                        <div class="font-14 text-justify">
+                            <h6 id="step-index-4" class="py-2 font-weight-bold">4. Một số điều cần biết khi sử dụng máy thái thịt tự động SL 300E</h6>
+                            <amp-img class="img-fluid my-2" src="../assets/mobile/Image6.png" height="342" width="342" alt="Logo" layout="responsive"></amp-img>
+                            <p class="font-14 m-0">- Để máy thái thịt SL 300E hoạt động hiệu quả, bạn nên để thịt đông lạnh ở nhiệt độ thường từ 10 – 15 phút trước khi thái. Tránh trường hợp thịt quá cứng dẫn đến dao cắt bị lệch.</p>
+                            <p class="font-14 m-0">- Không dùng máy thái thịt SL 300E để thái các loại thịt có xương, sụn da hoặc thái thịt sống.</p>
+                            <p class="font-14 m-0">- Nên vệ sinh máy ngay sau khi sử dụng, đảm bảo không có vụn thịt bám trên máy gây ra mùi khó chịu, mất an toàn vệ sinh thực phẩm và làm rỉ dao thái.</p>
+                            <p class="font-14 m-0">- Khi thấy lưỡi dao thái có dấu hiệu mòn, cùn, bạn hãy đặt đá mài trên lưỡi dao và tiến hành mài để lưỡi dao sắc trở lại.</p>
+                            <p class="font-14 m-0">- Khi thấy lưỡi dao quá mòn bạn cần tiến hành thay thế lưỡi mới.</p>
+                        </div>
+                        <div class="d-flex justify-content-center my-3">
+                            <a href="#" class="btn btn-outline-primary step-show">
+                                Xem thêm <i class="fas fa-chevron-down font-12 ml-3"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="font-weight-bold font-14 text-justify">Hy vọng rằng, những thông tin mà bài viết đã đưa ra sẽ giúp bạn biết cách sử dụng máy thái thịt tự động SL 300 hiệu quả. Trong quá trình sử dụng máy, nếu gặp sự cố hỏng hóc cần thay mới, sửa chữa, bạn hãy liên hệ với NEWSUN bằng cách nhắn tin hoặc gọi điện để được tư vấn, hỗ trợ kịp thời nhé!</p>
+                    <div class="d-flex justify-content-end">
+                        <span class="font-14">Nguồn: https://dienmaynewsun.com/</span>
+                    </div>
+                    <div class="d-flex justify-content-end btn-socials mt-3">
+                        <a href="#" class="mr-3">
+                            <span><i class="fas fa-thumbs-up mr-3"></i>Thích 200</span>
+                        </a>
+                        <a href="#">
+                            <span><i class="fab fa-facebook-f mr-3"></i>Share</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container hashtags pb-3">
+            <h4 class="font-14">Từ khóa tìm kiếm nhiều:</h4>
+            <div>
+                <a href="#" class="hashtag">
+                    <p># Máy xay giò chả</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p># Máy làm chà bông</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p># Máy tạo viên thịt cá</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p># Máy xay tạo viên thịt cá</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p># Tủ hấp giò chả</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p># Máy xay giò chả</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p># Máy xay giò chả</p>
+                </a>
+                <a href="#" class="hashtag">
+                    <p># Máy xay tạo viên thịt cá</p>
+                </a>
+            </div>
+        </section>
+        <section class="container border-bottom pb-3">
+            <div class="row">
+                <div class="col-12">
+                    <form action="#" method="POST" accept-charset="utf-8">
+                        <div class="ip-discuss">
+                            <textarea class="form-control" name="" id="" cols="30" rows="5" placeholder="Mời bạn thảo luận. Vui lòng nhập tiếng việt có dấu..."></textarea>
+                            <a href="#" class="btn btn-send font-14">Gửi</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="container pt-3">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <h6 class="font-weight-bold font-14">Bài viết liên quan:</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="row mb-md-3 mb-2">
+                        <div class="col-5 col-md-12">
+                            <amp-img class="img-fluid" src="../assets/trangtintuc/64986.png" height="59" width="120" layout="responsive" alt="Logo"></amp-img>
+                        </div>
+                        <div class="col-7 col-md-12 flex flex-column justify-content-between pl-0 pl-md-3 mt-md-2">
+                            <a href="chitiettintuc.html" title="">
+                                <h6 class="font-14 text-dark mb-1">Hướng dẫn sử dụng máy xay giò chả</h6>
+                            </a>
+                            <div>
+                                <a href="#" title="Tags"><span class="m-0 bg-2 font-10 p-1 text-dark"># Tư vấn mua máy xay giò chả</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="row mb-md-3 mb-2">
+                        <div class="col-5 col-md-12">
+                            <amp-img class="img-fluid" src="../assets/trangtintuc/64986.png" height="59" width="120" layout="responsive" alt="Logo"></amp-img>
+                        </div>
+                        <div class="col-7 col-md-12 flex flex-column justify-content-between pl-0 pl-md-3 mt-md-2">
+                            <a href="chitiettintuc.html" title="">
+                                <h6 class="font-14 text-dark mb-1">Hướng dẫn sử dụng máy xay giò chả</h6>
+                            </a>
+                            <div>
+                                <a href="#" title="Tags"><span class="m-0 bg-2 font-10 p-1 text-dark"># Tư vấn mua máy xay giò chả</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="row mb-md-3 mb-2">
+                        <div class="col-5 col-md-12">
+                            <amp-img class="img-fluid" src="../assets/trangtintuc/64986.png" height="59" width="120" layout="responsive" alt="Logo"></amp-img>
+                        </div>
+                        <div class="col-7 col-md-12 flex flex-column justify-content-between pl-0 pl-md-3 mt-md-2">
+                            <a href="chitiettintuc.html" title="">
+                                <h6 class="font-14 text-dark mb-1">Hướng dẫn sử dụng máy xay giò chả</h6>
+                            </a>
+                            <div>
+                                <a href="#" title="Tags"><span class="m-0 bg-2 font-10 p-1 text-dark"># Tư vấn mua máy xay giò chả</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="row mb-md-3 mb-2">
+                        <div class="col-5 col-md-12">
+                            <amp-img class="img-fluid" src="../assets/trangtintuc/64986.png" height="59" width="120" layout="responsive" alt="Logo"></amp-img>
+                        </div>
+                        <div class="col-7 col-md-12 flex flex-column justify-content-between pl-0 pl-md-3 mt-md-2">
+                            <a href="chitiettintuc.html" title="">
+                                <h6 class="font-14 text-dark mb-1">Hướng dẫn sử dụng máy xay giò chả</h6>
+                            </a>
+                            <div>
+                                <a href="#" title="Tags"><span class="m-0 bg-2 font-10 p-1 text-dark"># Tư vấn mua máy xay giò chả</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex btn btn-outline-primary justify-content-center align-items-center">
+                        <a href="trangtintuc.html" class="font-14 w-100 align-items-center">
+                            Xem tất cả bài viết liên quan
+                        </a>
+                        <i class="font-12 ml-3 fas fa-chevron-right float-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- end main -->
+    <!-- start footer -->
+    <footer class="mt-3 pt-3 border-top footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <h2 class="my-2 mt-0 font-14">TỔNG ĐÀI HỖ TRỢ (GỌI MIỄN PHÍ)</h2>
+                    <table class="mb-2 font-14 w-100">
+                        <tbody>
+                            <tr class="text-2">
+                                <td class="py-1">Mua hàng: <strong class="font-weight-bold">0934.6688.11</strong></td>
+                                <td class="py-1 pl-3">(8:00 - 22:00)</td>
+                            </tr>
+                            <tr class="text-2">
+                                <td class="py-1">Kỹ thuật: <strong class="font-weight-bold">096.139.1551</strong></td>
+                                <td class="py-1 pl-3">(8:00 - 22:00)</td>
+                            </tr>
+                            <tr class="text-2">
+                                <td class="py-1">Bảo hành: <strong class="font-weight-bold">03.8871.8871</strong></td>
+                                <td class="py-1 pl-3">(8:00 - 22:00)</td>
+                            </tr>
+                            <tr class="text-2">
+                                <td class="py-1">Khiếu nại: <strong class="font-weight-bold">03.8871.8871</strong></td>
+                                <td class="py-1 pl-3">(8:00 - 22:00)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-3 col-12 o-place pl-md-0">
+                    <h4 class="my-2">Xem 4 siêu thị (8:00 - 22:00 )</h4>
+                    <div class="o-place-info">
+                        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Các thông tin khác <i class="fas fa-angle-down ml-3"></i></a>
+                        <div class="collapse" id="collapseExample">
+                            <h6>Số 28 Ngõ 168 Nguyễn Xiển - Thanh Xuân - Hà Nội</h6>
+                            <h6>Số 75 Nguyễn Năng Tĩnh, Tp. Vinh, Nghệ An</h6>
+                            <h6>Số 100 Tôn Đức Thắng - Q. Liên Chiểu - Đà Nẵng (Cách bến xe Đà Nẵng 500m).</h6>
+                            <h6>27 Thoại Ngọc Hầu, Vĩnh Hòa, Tp. Nha Trang, Khánh Hòa</h6>
+                            <h6>Số 84 Nguyễn Xí - P.26 - Q. Bình Thạnh - Hồ Chí Minh (Cạnh bến xe Miền Đông)</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-md-4 pl-md-0">
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                        <a href="#" class="font-13"><i class="fab fa-facebook-f mr-2"></i>12,345K lượt thích</a>
+                        <a href="#" class="font-13"><i class="fab fa-youtube mr-2"></i>12,345K đăng ký</a>
+                    </div>
+                    <p class="mt-4">Website cùng tập đoàn:</p>
+                    <a href="trangchu.html" title="Logo">
+                        <amp-img class="img-fluid" src="../assets/logo.png" height="40" width="162" alt="Logo"></amp-img>
+                    </a>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="trangchu.html" title="Logo">
+                            <amp-img class="img-fluid" src="../assets/14971568174511_da-thong-bao-bo-cong-thuong.png" height="65" width="108" alt="Logo"></amp-img>
+                        </a>
+                        <a href="trangchu.html" title="Logo">
+                            <amp-img class="img-fluid" src="../assets/dmca_protected_sml_120n.png" height="25" width="127" alt="Logo"></amp-img>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 col-md-1 i-contact">
+                    <a href="#" title="Hỗ trợ online">
+                        <amp-img class="img-fluid" src="../assets/dddd.png" height="82" width="76" layout="responsive" alt="Red Status"></amp-img>
+                    </a>
+                    <a href="#" class="top-up"><i class="fas fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="../OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="../js/mobile/main.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+
+</html>
